@@ -1,610 +1,623 @@
-# Case 2 — Baixa utilidade recorrente e dependência do atendimento
+# Case 2 — Baixa utilidade diária e engajamento recorrente
 
-**Hackathon Ruptura 2026 | Localiza Assinatura | 02/10/2026**
+**Localiza Assinatura | Hackathon Ruptura 2026 | Pesquisa atualizada em 02/10/2026**
 
-> **Diagnóstico de trabalho:** o aplicativo já tem adoção e boa avaliação. A oportunidade é entender onde o valor da assinatura deixa de se conectar às necessidades de mobilidade do cliente, quanto esforço ele precisa fazer para resolver essas necessidades e como isso afeta a percepção de cuidado e a relação com a marca.
+> **Diagnóstico provisório:** o aplicativo tem alta adoção mensal e oferece recursos de gestão da assinatura. O ponto a investigar é por que essas capacidades geram uso predominantemente pontual e em quais atividades de dirigir existe uma necessidade relevante que o app não atende, não torna visível ou não permite concluir com vantagem para o cliente.
 
-Este documento desenvolve **a etapa do problema**, com foco nas duas frentes atribuídas ao responsável pela pesquisa no grupo. A escolha do conceito, da solução, da tecnologia e do MVP vem depois da validação e da priorização das necessidades.
+Este documento aprofunda exclusivamente os dois subproblemas definidos pelo grupo:
 
-| Responsabilidade combinada com o grupo | Onde está a análise |
+1. **Por que 36% dos clientes utilizam o app apenas de 1 a 2 vezes por mês e só 17% são altamente engajados?**
+2. **Quais funcionalidades do contexto diário de dirigir — abastecimento, estacionamento, pedágio e rotas — estão ausentes no app atual?**
+
+**Estado da pesquisa:** análise documental, sem entrevistas com assinantes, acesso ao aplicativo autenticado ou dados internos de navegação. Os números e recursos do case foram conferidos. A descrição oficial do app, o site de benefícios e descrições de alternativas de mobilidade foram consultados. As causas específicas e a ausência efetiva de determinadas funções ainda precisam de validação.
+
+## Guia de leitura e método
+
+| Parte | O que entrega |
 |---|---|
-| **Problema 1:** baixa utilidade diária e engajamento recorrente | Seções 2 e 8 |
-| Subproblema 1: por que 36% usam 1–2 vezes/mês e só 17% são classificados como altamente engajados? | Seção 2: leitura dos dados, causas possíveis e testes |
-| Subproblema 2: quais funcionalidades de abastecimento, estacionamento, pedágio e rotas estão ausentes? | Seção 8: inventário e lacunas a confirmar |
-| **Problema 2:** alta dependência de atendimento humano | Seção 9 |
-| Subproblema 1: quais gargalos contribuem para os mais de 80 mil contatos mensais? | Seção 9.1: barreiras possíveis e rastreabilidade |
-| Subproblema 2: por que o cliente busca humanos em demandas transacionais ou contratuais simples? | Seções 9.2–9.4: esforço, interpretação, risco e preferência |
+| 1. Enquadramento | Definição do problema e pergunta central |
+| 2. Subproblema 1 | Leitura dos percentuais, causas possíveis, alta frequência e critérios de análise |
+| 3. Subproblema 2 | Inventário atual, análise das quatro atividades, alternativas e auditoria de lacunas |
+| 4. Relação entre os dois | Por que atividade recorrente ou funcionalidade nova não garante retorno ao app |
+| 5. Validação | Entrevistas, dados e critérios para confirmar o problema |
+| 6. Síntese | Argumentação que o grupo já pode sustentar |
+| 7. Fontes | Referências, páginas e limites da investigação |
 
-**Estado da investigação:** pesquisa documental, com conferência dos PDFs, nova consulta à descrição oficial do app e à página do Clube de Benefícios e reaproveitamento crítico da pesquisa registrada no histórico do repositório. Não foram realizadas entrevistas com assinantes, observação do app autenticado ou análise dos sistemas internos. As causas específicas permanecem hipóteses.
+A estrutura segue **definir → enquadrar → priorizar/analisar → sintetizar**, usando SCQ, árvore de problemas, decomposição de jornadas e priorização, conforme os PDFs. A etapa do conceito vem depois. [M1, M2]
 
-## Como ler este documento
+Distinguimos quatro tipos de informação:
 
-As seções seguem as técnicas do PDF de ideação: **definir → enquadrar → priorizar/analisar → sintetizar**. Aplicamos SCQ, pergunta central, árvore de problemas e critérios de priorização. A orientação de aprender com experiências reais dos usuários vem do PDF “Aula o Problema”. [M1, M2]
+- **Fato documental:** o material ou fornecedor afirma algo; não implica que testamos sua execução.
+- **Sinal exploratório:** relato público ou observação que ajuda a levantar hipóteses, sem representar toda a base.
+- **Hipótese:** explicação plausível a confirmar ou descartar.
+- **Lacuna de evidência:** informação necessária que ainda não foi obtida.
 
-Ao longo do texto:
+As páginas citadas são as posições físicas no PDF, começando na primeira página do arquivo.
 
-- **Evidência documental:** informação apresentada pelo case ou por uma fonte identificada. Não significa auditoria dos dados internos.
-- **Sinal exploratório:** relato público ou mecanismo descrito em pesquisa de outro contexto. Ajuda a formular perguntas, sem medir a base Localiza.
-- **Hipótese:** explicação plausível que precisa ser confirmada, modificada ou descartada.
-- **Lacuna:** informação necessária que ainda não temos.
+## 1. Enquadramento do problema
 
-As referências estão na seção 20. As páginas dos PDFs são contadas desde a primeira página do arquivo, independentemente da numeração impressa no slide.
+### 1.1 Situação
 
-## 1. O desafio apresentado pela Localiza
+O app Localiza Assinatura reúne contrato, documentos, faturas, manutenção, multas, quilometragem, benefícios e informações do veículo. O case apresenta **80,1% de acesso mensal, 53 mil MAU e NPS do app 84**. [C1, p. 24–36]
 
-O case 2 pergunta como aumentar a relevância do aplicativo na rotina dos clientes e gerar novos motivos de uso recorrente. O objetivo explícito é criar valor adicional na jornada de mobilidade, fortalecer a relação com a marca e produzir impacto para cliente e negócio. [C1, p. 22]
+O material descreve a jornada atual como: **precisa resolver algo → acessa → resolve pontualmente → fecha → retorna quando surge outra necessidade**. [C1, p. 20–21]
 
-O material descreve uma jornada predominantemente pontual:
+### 1.2 Complicação
 
-**Surge uma necessidade → cliente acessa o app → resolve → fecha → retorna quando surge outra necessidade.** [C1, p. 20–21]
+O carro participa de atividades frequentes, mas o aplicativo é usado principalmente para tarefas pontuais. O próprio case afirma que benefícios e serviços nem sempre se conectam ao contexto do cliente e que faltam utilidades relevantes em outros momentos de mobilidade. [C1, p. 19–22]
 
-Também afirma que os benefícios e serviços nem sempre estão conectados ao contexto do cliente e que existem oportunidades na percepção de valor da assinatura, no atendimento, na renovação e na indicação. [C1, p. 19–22]
+Essa observação justifica investigar uma oportunidade. Ainda não demonstra que o cliente esteja insatisfeito com a frequência atual ou que deseje centralizar todas as atividades de dirigir no mesmo aplicativo.
 
-**A questão a investigar é quando essa dinâmica representa uma oportunidade perdida e quando representa um serviço eficiente.** Um cliente que resolve rapidamente e fecha o app pode estar recebendo exatamente o que contratou.
+### 1.3 Pergunta central — SCQ
 
-## 2. Problema 1 / Subproblema 1 — Por que 36% acessam 1–2 vezes e 17% acessam 11 ou mais?
+> **Por que o valor disponível no app gera uso predominantemente pontual, e quais necessidades recorrentes de abastecimento, estacionamento, pedágio e rotas permanecem sem atendimento útil no contexto do assinante?**
 
-### 2.1 O que os números dizem — e o que não dizem
+Precisamos distinguir três situações: pouca necessidade legítima de interação; uma necessidade que existe, mas já é bem atendida fora do app; e uma necessidade relevante que continua mal atendida.
 
-| Informação apresentada | O que podemos afirmar | O que ainda precisamos descobrir |
-|---|---|---|
-| 80,1% de acesso mensal | Há adoção mensal relevante | Quem compõe o denominador e o que essas pessoas concluem |
-| 53 mil MAU e 31 mil WAU | Existe uma base importante de usuários ativos | Período, definição de atividade e distribuição por jornada |
-| 36% na faixa de 1–2 acessos mensais | Parte dos usuários acessa pontualmente | Se a frequência atende às necessidades ou revela dificuldade de encontrar valor |
-| 17% com 11 ou mais acessos mensais | Há um grupo com alta frequência | Se retorna por utilidade, acompanhamento, múltiplas responsabilidades ou tentativas repetidas |
-| NPS do app 84 | O app é bem avaliado na pesquisa apresentada | Amostra, momento de coleta, respondentes e diferenças entre tarefas |
-| NPS relacional aproximadamente 45 | A experiência global merece investigação própria | Quais aspectos da assinatura explicam a avaliação |
-| Mais de 80 mil contatos mensais | O atendimento recebe volume relevante | Clientes únicos, motivos, resolução, recontatos e tentativa prévia no app |
-| 75% dos contatos por chat; 25% por telefone | Conhecemos a distribuição dos contatos nesses canais | Quanto é humano, automatizado, escolha do cliente ou exigência do processo |
-| Cerca de 48% de renovação | Renovação é um resultado de negócio relevante | Base elegível, janela, preço, necessidade de continuar e motivos de saída |
-| 7% de indicação | Existe espaço para investigar comportamento de indicação | Período, denominador, significado de indicar e conversão |
+### 1.4 Definições para não investigar o problema errado
 
-Fontes: [C1, p. 19, 21 e 25].
-
-### 2.2 Cuidados com a interpretação
-
-Na página 21, o texto diz “menos de 2x”; na tabela da página 25, a faixa é **“1 a 2”**. Adotamos a classificação explícita da tabela, preservando a divergência para confirmação.
-
-A distribuição apresentada é: 1–2 acessos, 36%; 3–5, 28%; 6–10, 19%; 11–20, 11%; 21 ou mais, 6%. O critério de “acesso engajado” precisa ser esclarecido. [C1, p. 25]
-
-Os 17% resultam das duas faixas superiores, 11% + 6%. **Os outros 47% estão entre 3 e 10 acessos.** A base não se divide apenas entre pouco e muito uso. A tabela se refere aos clientes que acessam o app no mês; precisamos confirmar a definição exata do denominador antes de falar em 36% de todos os clientes.
-
-Frota, contratos, clientes e usuários não são necessariamente a mesma unidade. Os números de aproximadamente 70 mil e 53 mil MAU/80,1% não devem ser harmonizados por suposição. Precisamos das bases e dos períodos.
-
-O material apresenta também NPS do produto 85 em outra página. Isso exige verificar a população e a definição de cada pesquisa. NPS costuma ser expresso em pontos, de −100 a +100, embora os slides utilizem o símbolo de porcentagem em alguns locais. [C1, p. 5, 19 e 25]
-
-**Não é possível concluir que baixa frequência causa menor NPS ou não renovação.** O case apresenta essa relação como preocupação de negócio, mas não disponibiliza uma análise causal. Também não sabemos quanto do atendimento é evitável.
-
-### 2.3 Causas possíveis do uso pontual
-
-| Explicação a investigar | Como poderia produzir 1–2 acessos/mês | Evidência necessária |
-|---|---|---|
-| Frequência natural das tarefas | Fatura é mensal; documentos e serviços são consultados quando necessários | Motivo e conclusão de cada acesso |
-| Delegação desejada | Assinante quer pensar menos na administração do carro | Motivação da contratação e satisfação com pouco uso |
-| Pouca relevância adicional | Cliente não identifica algo útil fora das tarefas contratuais | Necessidades frequentes que o serviço deixa de atender |
-| Benefícios desconhecidos | Não sabe o que existe ou onde encontrar | Conhecimento espontâneo e observação de descoberta |
-| Benefícios inadequados | Sabe que existem, mas não compensam no seu contexto | Elegibilidade, região, esforço e ganho percebido |
-| Alternativas estabelecidas | Já resolve rotas, estacionamento ou abastecimento em outro serviço | Alternativa real e motivo de escolha |
-| Atrito ou confiança reduzida | Evita retornar depois de erro, dificuldade ou informação inconsistente | Histórico de falha e comportamento posterior |
-| Valor entregue sem abrir o app | Aviso ou outro canal pode atender à necessidade | Cobertura e uso efetivo desses canais; hipótese ainda sem medição |
-
-O case dá suporte documental às tarefas pontuais e à falta de conexão contextual. As demais linhas são hipóteses, não causas confirmadas nem partes de uma distribuição medida.
-
-### 2.4 O que pode explicar o grupo de 11+ acessos
-
-Pode representar utilidade recorrente, consulta de dados do carro, acompanhamento de um serviço, gestão de responsabilidades ou tentativas repetidas de resolver o mesmo assunto. O rótulo “alto engajamento” do slide é uma faixa de frequência; ainda precisamos verificar a qualidade desse uso.
-
-Comparar, entre faixas, **tarefas distintas concluídas, erros, tempo, contatos, recontatos, tempo de contrato e percepção de valor**. Se o grupo de 11+ acessos concentra erros e recontatos, frequência alta não é necessariamente o comportamento desejado. Se o grupo de 1–2 conclui tudo com satisfação, não há justificativa para exigir mais interação.
-
-**Resposta provisória ao subproblema:** o padrão é compatível com um app voltado a tarefas episódicas. O case aponta falta de relevância contextual, mas não sabemos quanto do uso pontual é saudável, quanto decorre de desconhecimento/inadequação e quanto decorre de barreiras. A investigação deve separar esses mecanismos.
-
-### 2.5 Definição de engajamento que precisamos investigar
-
-Para este diagnóstico, **utilidade diária** significa pertinência às atividades da rotina; não exige uma abertura todos os dias. **Engajamento recorrente útil** significa retornar para necessidades nas quais o cliente consegue obter valor, distinguindo novos episódios de repetição do mesmo bloqueio.
-
-Medir retorno por tipo de necessidade e por cliente elegível, junto da conclusão e do esforço. Precisamos descobrir a cadência natural da atividade antes de adotar frequência diária, semanal ou mensal como expectativa. Se a necessidade só surge mensalmente, compará-la a um hábito diário pode levar à conclusão errada.
-
-## 3. Formulação do problema com SCQ
-
-### Situação
-
-O cliente contrata um serviço de assinatura com carro e serviços associados. O app já reúne recursos para contrato, pagamentos, documentos, manutenção, quilometragem, multas, benefícios e ajuda. O case mostra alta adesão mensal e boa avaliação do canal. [C1]
-
-A promessa comercial enfatiza comodidade, previsibilidade e menos preocupações com a administração do carro. É uma promessa da marca; ainda precisamos descobrir quais dessas motivações pesaram na decisão de cada assinante. [L1]
-
-### Complicação
-
-Segundo o case, a relação digital é principalmente reativa e os benefícios nem sempre acompanham o contexto do cliente. Há oportunidade de fortalecer o valor percebido da assinatura e a relação com a marca. [C1]
-
-**Hipótese a investigar:** em determinados episódios, o cliente precisa descobrir, interpretar ou coordenar sozinho informações e ações para atingir seu objetivo. Em outros, pode não reconhecer uma utilidade relevante fora das tarefas contratuais. Esses mecanismos são diferentes e exigem evidências próprias.
-
-### Pergunta central
-
-> **Em quais situações de mobilidade o assinante deixa de perceber valor ou precisa fazer esforço relevante para obter o que espera da assinatura, e quais causas explicam isso?**
-
-Perguntas de apoio:
-
-- Que resultado a pessoa queria alcançar?
-- Como tentou resolver e qual foi a primeira barreira?
-- O que levou ao atendimento: escolha, dúvida, falha, urgência ou exigência do processo?
-- Quando o valor existe, mas não é reconhecido?
-- Quando simplesmente não existe necessidade de interação?
-
-Essa formulação mantém a investigação aberta. Não pressupõe superapp, comunidade, chatbot, IA ou qualquer jornada específica.
-
-## 4. Separando sintoma, dor, causa e consequência
-
-| Camada | Exemplo no case | Como tratar |
-|---|---|---|
-| Sintoma observável | Poucos acessos; contato com atendimento; benefício sem uso | Medir e contextualizar |
-| Dor do cliente | Esforço, dúvida, perda de tempo, imprevisibilidade ou sensação de falta de apoio | Recuperar episódios reais e consequências |
-| Possível causa | Informação ausente, regra difícil, falha técnica, indisponibilidade, ausência de relevância | Confirmar com observação, dados e operação |
-| Consequência para a empresa | Custo de atendimento, recontato, menor confiança, possível perda de renovação | Verificar vínculo e magnitude, considerando outros fatores |
-
-**“O cliente não abre o app todos os dias” descreve um comportamento, mas não identifica uma dor.** Da mesma forma, “o cliente quer um superapp” seria uma preferência por uma solução; ainda precisaríamos entender a necessidade que a originou.
-
-Uma formulação inicial, ainda hipotética, da dor é:
-
-> “Quero usar o carro para seguir minha vida com tranquilidade, mas em algumas situações preciso gastar tempo descobrindo o que fazer, entendendo as regras e confirmando se tudo foi resolvido.”
-
-Essa frase é uma síntese do time para orientar pesquisa. **Não é uma fala coletada de um cliente.**
-
-## 5. Para quem esse problema pode existir
-
-O material apresenta **pessoas físicas, microempresas e PMEs** como públicos da assinatura. Isso não equivale a todo o público da Localiza: aluguel eventual, gestão de frotas e serviços para motoristas de aplicativo possuem contextos próprios. [C1, p. 5–6; L1]
-
-Antes de segmentar por interesse, precisamos conhecer o papel de cada pessoa:
-
-| Papel | Necessidade que pode ter | Pergunta de pesquisa |
-|---|---|---|
-| Titular do contrato | Entender condições e assumir decisões | É também quem usa o app e dirige? |
-| Responsável pelo pagamento | Compreender custos e evitar surpresas | Recebe as informações necessárias? |
-| Condutor autorizado | Usar o veículo e lidar com ocorrências | Tem acesso e autonomia compatíveis com seu papel? |
-| Pessoa que organiza serviços | Coordenar horários e disponibilidade | Precisa consultar outras pessoas ou canais? |
-| Responsável por pequena empresa | Preservar continuidade de trabalho e controlar despesas | A dificuldade é individual ou envolve vários usuários/veículos? |
-
-Os papéis podem coincidir ou estar distribuídos. Não devemos pressupor que uma conta representa uma rotina individual.
-
-### Segmentos comportamentais para investigação
-
-São hipóteses de recrutamento, sem tamanho estimado:
-
-| Comportamento/necessidade | O que queremos entender |
+| Termo | Definição para a pesquisa |
 |---|---|
-| Deseja delegar a administração do carro | Quanto quer acompanhar e quanto espera que o serviço resolva sem intervenção |
-| Busca controle financeiro | Quais cobranças, regras ou estimativas geram insegurança |
-| Coordena uma rotina familiar | Como trabalho, escola e outros compromissos afetam os serviços |
-| Depende do carro para trabalhar | Qual o impacto de indisponibilidade e espera |
-| Encontra dificuldade em tarefas digitais | Qual tarefa, condição de uso ou experiência anterior explica a barreira |
-| Prefere autonomia digital | O que já funciona bem e quando precisa de ajuda |
+| Utilidade diária | Pertinência às atividades da rotina; não obriga abertura diária |
+| Recorrência | Reaparecimento da necessidade em uma cadência real, que pode ser diária, semanal, mensal ou por evento |
+| Frequência de acesso | Contagem segundo a definição técnica do case, ainda a esclarecer |
+| Engajamento útil | Uso que ajuda a compreender, decidir ou concluir uma necessidade com benefício reconhecível |
+| Hábito | Tendência a recorrer a uma alternativa em determinado contexto; não pode ser inferido de um único mês |
+| Lacuna funcional | Capacidade necessária indisponível no recorte auditado |
+| Lacuna de experiência | Capacidade existe, mas não é descoberta, compreendida, elegível ou concluída com utilidade |
 
-Uma mesma pessoa pode estar em vários grupos. Essas categorias não são personas validadas nem uma divisão estatística da base.
+**A frequência de dirigir é diferente da frequência de abastecer, pagar estacionamento, passar em pedágio ou consultar uma rota. E todas elas são diferentes da frequência necessária de abrir um app.**
 
-## 6. Idade, habilidade digital e acessibilidade
+## 2. Subproblema 1 — Por que 36% acessam 1–2 vezes e 17% têm alta frequência?
 
-### O que sabemos sobre a base
+### 2.1 O que a distribuição realmente mostra
 
-O PDF informa que 60% de **671 respondentes de uma pesquisa com leads não convertidos RAC e clientes RAC** tinham 45 anos ou mais; 50% tinham renda familiar acima de R$ 10 mil. O levantamento aparece no contexto do case 1. [C1, p. 17]
+| Acessos no mês | Participação apresentada |
+|---|---:|
+| 1–2 | 36% |
+| 3–5 | 28% |
+| 6–10 | 19% |
+| 11–20 | 11% |
+| 21 ou mais | 6% |
 
-**Esses números não caracterizam os assinantes ativos do case 2.** A distribuição etária e de renda desse público continua sendo uma lacuna.
+Fonte: [C1, p. 25].
 
-### O que o contexto brasileiro ajuda a investigar
+Os 17% correspondem à soma das faixas de 11–20 e 21+, isto é, **11% + 6%**. Os **47% restantes estão entre 3 e 10 acessos**. Portanto, a distribuição não se resume a pouco uso versus alto uso.
 
-A TIC Domicílios 2025 registra diferenças de acesso à internet e atividades digitais por idade. Entre usuários de internet, o uso de mensagens instantâneas aparece em 95% da faixa de 45–59 e 83% da faixa de 60+. A declaração de instalação de programas/apps aparece em 29% e 12%, respectivamente. [B1–B3]
+Derivações simples da própria tabela: **64% estão em até 5 acessos** e **83% em até 10**. Esses totais descrevem frequência, sem medir satisfação, esforço, utilidade ou oportunidade perdida.
 
-Os dados indicam que conversar digitalmente e realizar outras tarefas digitais são atividades distintas. Não instalar um app no período investigado não demonstra incapacidade. Esses percentuais nacionais não podem ser transferidos para clientes da Localiza.
+O slide apresenta a distribuição entre os clientes que acessam o app no mês. Precisamos confirmar o denominador e o significado de “acesso engajado” antes de falar em 36% de toda a base. Não aplicamos automaticamente os percentuais à frota ou aos 53 mil MAU.
 
-| Faixa para recrutamento de adultos | Questões a investigar, sem pressupor o resultado |
+### 2.2 Limites que mudam a interpretação
+
+| Informação que falta | Por que importa |
 |---|---|
-| 18–24 | Quem decide/paga; experiência com contratos; comparação com outros serviços digitais |
-| 25–34 | Pressão de tempo, previsibilidade financeira e divisão de responsabilidades |
-| 35–44 | Coordenação entre compromissos, pessoas e disponibilidade do veículo |
-| 45–59 | Familiaridade com canais, confiança nas informações e expectativa de conveniência |
-| 60+ | Diversidade de experiência digital, condições de leitura/interação e necessidade de apoio |
+| Acesso significa sessão, evento, login ou dia ativo? | Onze eventos num mesmo episódio não equivalem a onze dias de uso |
+| Qual é o mês/período de referência? | Entrega de veículos, férias ou serviços podem alterar a distribuição |
+| Quem entra na base? | Titulares, condutores, contas e contratos não são necessariamente equivalentes |
+| Qual tarefa motivou o acesso? | Uma frequência idêntica pode representar comportamentos muito diferentes |
+| A tarefa foi concluída? | Retornar pode indicar utilidade ou tentativa repetida |
+| O cliente percebeu valor? | Acesso não comprova benefício reconhecido |
+| O comportamento persiste em outros meses? | A faixa pode refletir um evento temporário, sem representar um segmento estável |
 
-Todos esses temas também podem aparecer nas outras faixas. Os recortes servem para diversificar a investigação, não para atribuir um comportamento a uma geração.
+O texto da página 21 diz “menos de 2x”, enquanto a tabela da página 25 diz “1 a 2”. Adotamos a faixa explícita da tabela. MAU, WAU e adesão mensal precisam de bases e janelas compatíveis; sua razão não deve ser apresentada como retenção.
 
-É importante comparar pessoas da mesma idade com habilidades diferentes e pessoas de idades diferentes com tarefas semelhantes. Urgência, risco financeiro, experiência anterior, condições de uso e clareza da tarefa precisam ser registrados.
+**Não conseguimos calcular uma média exata de acessos a partir dessas faixas**, especialmente porque 21+ não tem limite superior. Também não sabemos quais usuários transitam entre faixas ao longo do contrato.
 
-Necessidades de leitura, visão, interação motora ou compreensão devem ser investigadas sem inferir deficiência a partir da idade. As orientações da W3C relacionam necessidades de usuários mais velhos a padrões gerais de acessibilidade. [A1]
+### 2.3 A explicação mais diretamente sustentada pelo case: tarefas episódicas
 
-## 7. Cultura, rotina e condições de uso
+Os recursos apresentados concentram atividades administrativas e eventos relacionados ao contrato. [C1, p. 24–36]
 
-### Conversa como hábito digital
-
-Na TIC Domicílios 2025, 92% dos usuários de internet declararam usar mensagens instantâneas. Isso justifica investigar familiaridade com comunicação por mensagens. **Não demonstra preferência por humanos, WhatsApp ou atendimento empresarial.** [B2]
-
-O chat do case também não é identificado como WhatsApp. Um contato pode envolver automação, atendimento humano ou ambos.
-
-### Confiança e responsabilidade
-
-É plausível que parte dos clientes procure uma pessoa para interpretar uma regra, confirmar uma informação ou saber quem assume responsabilidade se algo der errado. Estudos de experiência de outros setores descrevem mecanismos desse tipo. Sua frequência na Localiza ainda é desconhecida. [U1–U3]
-
-Precisamos perguntar o que o atendente efetivamente entregou: informação, execução, exceção, confirmação ou acolhimento. A expressão “o brasileiro gosta de falar com gente” não explica a causa e esconde diferenças entre tarefas.
-
-### Significado do carro e da assinatura
-
-O carro pode representar autonomia, trabalho, cuidado familiar, conforto ou status. A assinatura pode significar previsibilidade e liberação de burocracia, mas também gerar dúvida sobre limites de uso, avarias e devolução.
-
-São dimensões a investigar, não motivações comprovadas da base. O posicionamento comercial da marca ajuda a reconhecer sua promessa, mas não substitui a escuta de clientes. [L1]
-
-### Região, renda e infraestrutura
-
-Cidade, distância dos prestadores, disponibilidade de parceiros, conectividade e tempo disponível podem transformar uma mesma tarefa em experiências muito diferentes.
-
-Um benefício sem parceiro acessível pode ser irrelevante. Um desconto pequeno pode não compensar o deslocamento ou o esforço de resgate. Pessoas com restrição de orçamento podem priorizar previsibilidade; outras podem priorizar tempo. Essas relações precisam ser verificadas, sem determinismo por renda.
-
-### Privacidade e divisão de responsabilidades
-
-Há diferença entre querer ajuda e aceitar compartilhar contexto, localização ou informações com familiares e parceiros. Precisamos investigar quais dados o cliente considera necessários e em quais situações sente perda de controle.
-
-Gênero, idade, escrita de uma avaliação ou composição familiar não autorizam inferências sobre quem dirige, decide, paga ou tem dificuldade digital.
-
-## 8. Problema 1 / Subproblema 2 — O que falta em abastecimento, estacionamento, pedágio e rotas?
-
-### 8.1 Critério: recurso existente, benefício e ação concluída são coisas diferentes
-
-“Há uma categoria de benefício” não significa “o cliente consegue concluir toda a atividade pelo aplicativo”. Da mesma forma, “a descrição pública não menciona” não significa “a função não existe”.
-
-Nesta etapa usamos duas classificações:
-
-- **Documentado:** o case ou a descrição oficial apresenta a capacidade. Ainda não foi testada no app autenticado.
-- **Não comprovado nos materiais:** não encontramos confirmação da capacidade nas fontes examinadas. Precisa de auditoria do produto para ser classificada como ausente.
-
-### 8.2 Inventário das quatro atividades
-
-| Atividade | O que já está documentado | O que não ficou comprovado | Necessidade a investigar |
-|---|---|---|---|
-| **Abastecimento** | Visualização do nível de combustível no case, p. 33 | Busca/comparação de postos e preços; benefício específico vigente de combustível; pagamento e histórico de abastecimento | Onde abastece, como escolhe, quais dificuldades e se quer ajuda da Localiza |
-| **Estacionamento** | Descontos em estacionamentos anunciados na descrição oficial do app | Busca de vagas, reserva, pagamento integrado, extensão de tempo ou disponibilidade em tempo real | Frequência, cobertura, esforço para estacionar e utilidade dos descontos existentes |
-| **Pedágio** | Descontos em pedágios anunciados na descrição oficial do app | Gestão de tag, extrato específico, contestação e estimativa de custo de pedágio por trajeto | O que já usa, quem administra a cobrança e onde encontra dúvidas |
-| **Rotas** | Localização do carro e gestão de quilometragem apresentadas no case | Navegação passo a passo, trânsito, planejamento de rota e integração explícita com custo/franquia/serviços | Se há uma dificuldade não resolvida pelos aplicativos de navegação atuais |
-
-Fontes: [C1, p. 24, 28 e 32–33; L2, L3]. A localização do veículo não comprova navegação. O nível de combustível não comprova uma jornada de abastecimento. Um desconto não comprova pagamento integrado ou operação de uma tag.
-
-Na nova consulta à página do Clube de Benefícios, as categorias são visíveis, mas os cartões de parceiros vieram como conteúdo dinâmico não resolvido no HTML recebido. **Não foi possível verificar nomes, cobertura ou regulamentos individuais de todos os parceiros.** Por isso, não classificamos benefício de combustível como existente ou ausente com base nessa página. [L2]
-
-**Resposta provisória ao subproblema:** existem recursos e benefícios relacionados à rotina de dirigir. As lacunas mais específicas estão na comprovação de jornadas completas e na sua utilidade para o contexto do cliente. A lista de funcionalidades efetivamente ausentes depende de acesso ao app e confirmação com produto.
-
-### 8.3 Como confirmar ausência e relevância
-
-Para cada uma das quatro atividades, registrar versão do app, sistema operacional, perfil/contrato, veículo, cidade, recurso encontrado, caminho, elegibilidade, eventual parceiro externo e resultado alcançado. Conferir também funções liberadas apenas para parte da base.
-
-Classificar o resultado da auditoria como: **disponível e concluída; disponível com limitação; benefício/encaminhamento externo; ausente no recorte testado; ou não verificável**. Isso evita generalizar um teste de uma conta para todos os clientes.
-
-A existência de um recurso não encerra a investigação: precisamos saber se é descoberto, compreendido, elegível e útil. A ausência também não justifica automaticamente construí-lo: uma alternativa já pode resolver a necessidade melhor e sem esforço relevante.
-
-### 8.4 Trabalhos do cliente, antes de funcionalidades
-
-O objetivo do cliente geralmente está ligado à vida que o carro viabiliza. A tabela registra trabalhos a investigar, sem escolher funcionalidades:
-
-| Situação | Resultado desejado | Dificuldade possível | Evidência necessária |
-|---|---|---|---|
-| Trabalho e compromissos | Chegar e manter a rotina sem interrupção | Serviço incompatível com horários; espera; indisponibilidade | Episódio recente e impacto real |
-| Escola e rotina familiar | Coordenar deslocamentos e responsabilidades | Informação ou decisão concentrada na pessoa errada | Identificar papéis e sequência |
-| Abastecimento/estacionamento | Usar uma opção conveniente e com custo compreensível | Vantagem desconhecida, distante ou trabalhosa | Elegibilidade, tentativa e resultado |
-| Manutenção | Cumprir o necessário com previsibilidade | Dúvida, agendamento difícil ou falta de confirmação | Fluxo observado e dados operacionais |
-| Viagem e passeio | Organizar o plano com clareza sobre o veículo e condições | Informação dispersa ou regra pouco compreendida | Relato de preparação e alternativa usada |
-| Evento ou atividade esportiva | Entender condições de uso relevantes | Dúvida sobre equipamento e regras | Caso concreto e orientação oficial disponível |
-| Cobrança ou incidente | Entender a situação e obter uma resolução | Incerteza financeira, urgência ou exceção | Motivo de contato e conclusão |
-
-**Não sabemos quais dessas situações concentram a maior dor.** Viajar, por exemplo, permanece apenas uma possibilidade a investigar. A decisão do recorte precisa vir da frequência, intensidade e capacidade de atuação sobre o problema.
-
-## 9. Problema 2 — Alta dependência de atendimento humano
-
-### 9.1 Subproblema 1: quais gargalos podem contribuir para os 80 mil+ contatos?
-
-O case afirma sobrecarga com demandas que poderiam ser digitais, mas não fornece os motivos dos contatos ou a parcela evitável. [C1, p. 21] A pergunta precisa ser respondida com a sequência **necessidade → tentativa → barreira → contato → resultado**.
-
-| Gargalo possível | Base disponível | Dado que confirma ou descarta |
+| Capacidade documentada | Disparador típico a investigar | Relação possível com a frequência |
 |---|---|---|
-| Login/recuperação de acesso | Relatos públicos na pesquisa anterior [R1, R2] | Erro, versão, aparelho e contato posterior pelo mesmo motivo |
-| Contrato não reconhecido/sincronização | Relato público [R1] | Conta/contrato elegível, atualização e ocorrência registrada |
-| Descoberta da função | Hipótese: o recurso existe, mas o cliente não o encontra | Tarefa observada e motivo do contato |
-| Regra ou cobrança não compreendida | Jornada financeira e contrato existem; barreira é hipótese [C1, U1] | Dúvida recebida, informação vista e explicação que resolveu |
-| Agendamento/seleção de local | Relatos públicos [R2] | Funil, erro, cidade, oficinas e disponibilidade real |
-| Falta de status ou confirmação | O case já mostra acompanhamento; insuficiência é hipótese [C1, p. 31 e 36] | Atualização disponível versus perguntas e recontatos |
-| Repetição entre canais | Relatos exploratórios de repetição [R1] | Quantas vezes o mesmo dado foi solicitado no episódio |
-| Exceção ou dependência de operação | Hipótese apoiada por relatos de assistência [R1] | Poder de decisão, responsável, prazo e ação necessária |
-| Atendimento para acompanhar promessa não cumprida | Hipótese, não frequência medida | Solicitação original, prazo e motivo do novo contato |
+| Consultar fatura/pagamento | Vencimento ou dúvida de cobrança | Pode concentrar consultas em torno do ciclo mensal |
+| Acessar contrato/CRLV | Conferência, documento ou dúvida | Pode ocorrer somente quando necessário |
+| Agendar manutenção | Prazo, necessidade preventiva/corretiva | Depende do serviço; não é necessariamente mensal |
+| Administrar multa/condutor | Recebimento de infração | Evento eventual |
+| Consultar quilometragem | Interesse em acompanhar uso contratado | Pode ser periódico ou pontual, conforme a pessoa |
+| Ver localização/combustível | Necessidade de consultar o veículo | Potencial de frequência distinto; cobertura e utilidade precisam de confirmação |
+| Consultar benefícios | Intenção de usar uma vantagem | Depende de conhecimento, elegibilidade e contexto |
 
-Relatos antigos não confirmam falha atual; recursos já documentados não podem ser descritos como inexistentes. Uma tela disponível também não garante conclusão: precisamos acompanhar o resultado operacional.
+Os disparadores são interpretações de possíveis situações de uso, não frequências medidas. Ainda assim, o desenho descrito explica por que um cliente pode abrir o app poucas vezes mesmo dirigindo diariamente.
 
-**Não conhecemos a contribuição de cada gargalo para o volume total.** Os 80 mil+ são contatos, não clientes únicos nem 80 mil falhas digitais. A divisão de 75% chat/25% telefone também não mede preferência.
+**Conclusão documental:** o caso é compatível com uso orientado a eventos. **Questão em aberto:** quanto desse uso é suficiente e quanto revela necessidades adicionais mal atendidas?
 
-### 9.2 Subproblema 2: por que buscar humano em uma demanda aparentemente simples?
+### 2.4 Dez mecanismos que podem explicar pouca recorrência
 
-“Simples” pode ser uma classificação da empresa. Para quem teme pagar um valor indevido, interromper o trabalho ou aceitar uma condição, a mesma tarefa pode ser importante e incerta.
+#### A. Pouca necessidade de interação, com boa resolução
 
-Separar **consultar informação**, **interpretar sua aplicação**, **executar uma ação** e **resolver uma exceção**. O app pode permitir baixar o contrato, enquanto a pessoa ainda precisa entender uma cláusula; pode mostrar uma fatura, enquanto a pessoa deseja contestá-la. Consulta não equivale a interpretação ou resolução.
+O cliente pode entrar uma ou duas vezes, resolver e seguir a rotina. Se não há pendência, incerteza ou dificuldade, o pouco uso não configura dor. Precisamos perguntar o que deixou de fazer, se algo ficou sem resolver e se deseja mais interação.
 
-Há pelo menos seis explicações possíveis. Elas podem coexistir:
+**Fortalece a hipótese:** poucas tarefas, conclusão fácil e satisfação. **Enfraquece:** necessidade recorrente que o cliente relata estar mal atendida.
 
-| Mecanismo | O que a pessoa precisa | Sinal ou referência | Como distinguir |
-|---|---|---|---|
-| Bloqueio técnico | Entrar ou concluir uma tarefa | Relatos públicos de acesso e agendamento [R1, R2] | Confirmar versão, erro e tentativa anterior |
-| Informação insuficiente | Entender o que falta ou vai acontecer | Relato de informação antes da entrega; pesquisa de UX [R1, U1] | Comparar pergunta com informação disponível |
-| Risco e confirmação | Saber se uma regra ou cobrança se aplica | Mecanismo de UX em outros contextos [U1] | Perguntar qual incerteza impedia a decisão |
-| Exceção operacional | Obter ação fora do fluxo padrão | Relatos exploratórios sobre assistência [R1] | Verificar autoridade e disponibilidade necessárias |
-| Menor esforço/canal familiar | Explicar a situação com menos trabalho | Relatos de repetição; hábito nacional de mensagens [R1, B2] | Comparar a sequência real dos canais |
-| Relação e acolhimento | Sentir acompanhamento e responsabilidade | Relato de falta de humano e elogio a consultor [R1] | Identificar o que a pessoa entregou além da informação |
+#### B. A assinatura é contratada para reduzir administração
 
-### 9.3 Três situações que precisam ser separadas
+A promessa comercial de comodidade e menos preocupações torna plausível que alguns clientes queiram pensar menos no carro. [L1] Acompanhar mais painéis ou consultar informações sem consequência prática pode contrariar essa expectativa.
 
-**Escolha:** a tarefa era possível digitalmente, mas o cliente quis conversar. Ainda precisamos conhecer o motivo.
+Isso precisa ser recuperado na motivação real da contratação. Não podemos assumir que todos delegam da mesma maneira: alguns valorizam controle, outros preferem ser envolvidos somente quando há decisão necessária.
 
-**Contato induzido:** o cliente tentou o digital e encontrou uma barreira. Aqui, chamar o comportamento de “preferência pelo humano” esconderia o problema.
+**Pergunta-chave:** “O que você esperava deixar de administrar ao assinar?”
 
-**Contato necessário:** a tarefa exigia avaliação, autorização, negociação ou ação operacional. A presença de um humano pode ser parte adequada do serviço.
+#### C. O valor disponível concentra-se no contrato, enquanto a rotina acontece fora dele
 
-Um mesmo cliente pode preferir autonomia para consultar um documento e atendimento para contestar uma cobrança. A unidade de análise deve ser o episódio, não um rótulo permanente de “cliente digital” ou “cliente humano”.
+O case declara pouca utilidade fora das necessidades contratuais e benefícios nem sempre conectados ao contexto. [C1, p. 21] Uma pessoa pode pensar em chegar ao trabalho, abastecer ou estacionar, sem associar essas situações à Localiza.
 
-### 9.4 Como verificar se existe preferência pelo humano
+O mecanismo possível é uma distância entre o objetivo cotidiano e o uso que a pessoa atribui ao app. Precisamos identificar quais episódios ocorrem, como são resolvidos e onde existe dificuldade; não basta perguntar quais funções ela gostaria de ter.
 
-Na entrevista, perguntar o que a pessoa tentou, quais opções conhecia e o que o atendente fez. Sempre que viável, observar uma tarefa em que o autoatendimento esteja disponível e funcione para aquele perfil.
+#### D. Recursos existem, mas não são descobertos ou lembrados
 
-Se a pessoa escolhe conversar porque quer interpretação ou confirmação, há uma preferência contextual a compreender. Se não consegue entrar, encontrar ou concluir, o contato é consequência de uma barreira. Se só um atendente pode executar a ação, a dependência está no processo.
+A apresentação de benefícios na home não comprova que o cliente saiba o que está disponível nem que se lembre disso no momento de usar. Um recurso pode ser desconhecido, conhecido de forma vaga ou conhecido sem compreensão do benefício.
 
-**Resposta provisória ao subproblema:** não há evidência de preferência humana generalizada. Esforço, risco percebido, interpretação, familiaridade e exceções são mecanismos plausíveis. Precisamos distinguir escolha de contato induzido ou obrigatório e identificar o ganho entregue pelo humano em cada episódio.
+Investigar conhecimento espontâneo antes de mostrar a lista. Depois, observar se o usuário encontra uma vantagem pertinente e entende como utilizá-la. Uma resposta positiva após explicação do pesquisador não demonstra descoberta espontânea.
 
-## 10. O que as avaliações públicas acrescentam
+#### E. Benefícios não compensam no contexto real
 
-A pesquisa anterior registrou 50 avaliações recentes da App Store brasileira, entre 11/05/2025 e 18/09/2026, além de três avaliações exibidas pela Google Play. O recorte contém elogios e críticas. [R1, R2, H1]
+Uma vantagem pode exigir parceiro distante, cadastro adicional, cupom, condição de pagamento ou etapa externa. Pode também não existir para o contrato, região ou situação da pessoa. Esses são mecanismos possíveis, ainda sem auditoria completa das ofertas.
 
-| Sinal encontrado | O que permite investigar |
-|---|---|
-| Elogios à facilidade e à autonomia | Em quais tarefas o canal já entrega valor |
-| Pedido de informação completa antes da entrega | Expectativas e lacunas no acompanhamento |
-| Relatos de acesso, reconhecimento do contrato e seleção de cidade | Barreiras técnicas ou de integração |
-| Relatos de repetição de dados e procura reiterada de atendimento | Esforço e continuidade |
-| Elogio à orientação de consultor | Interpretação e valor do apoio humano |
-| Relato de sentir falta de humano | O que a pessoa esperava e não encontrou |
+Investigar o ganho líquido percebido: benefício obtido versus deslocamento, tempo, restrição e esforço adicional. A oferta pode existir e continuar pouco útil. Conhecimento sem resgate não deve ser interpretado automaticamente como desinteresse.
 
-São relatos selecionados por mecanismos das lojas, não uma amostra representativa. Não temos idade ou renda dos autores; não reproduzimos falhas; alguns relatos dizem respeito a versões anteriores. Portanto, não estimamos prevalência nem afirmamos que os problemas persistem na versão atual.
+#### F. Alternativas já ocupam o momento de decisão
 
-**As avaliações servem para montar perguntas e selecionar tarefas de investigação.** A existência de experiências positivas é relevante: a pesquisa deve explicar tanto o que falha quanto o que funciona.
+Aplicativos especializados anunciam navegação, pagamento de abastecimento e gestão de tag. [A2–A5] Isso demonstra disponibilidade de alternativas, mas não sua adoção entre assinantes.
 
-## 11. Onde pode estar a falta de conexão entre cliente e marca
+O cliente pode já ter cadastro, meio de pagamento, histórico, benefício ou preferência em outra opção. Se ela resolve bem, pode não haver motivo para consultar a Localiza na mesma atividade.
 
-“Falta de conexão” precisa virar algo observável. Propomos investigar quatro dimensões:
+**Pergunta-chave:** “Na última vez em que precisou disso, qual opção usou e por que foi a primeira?”
 
-| Dimensão | Pergunta que revela o problema | Sinal possível |
+#### G. Informação pouco confiável ou pouco acionável reduz retorno
+
+Um dado que o cliente não compreende, não consegue verificar ou não sabe como usar pode perder utilidade. A pesquisa anterior encontrou relatos sobre acesso, quilometragem e localização, mas não reproduziu as falhas nem confirmou sua persistência. [R1, H1]
+
+Separar confiabilidade percebida de cobertura real. A pessoa pode deixar de consultar um recurso porque já encontrou inconsistência, porque a informação não está disponível naquele carro ou porque o dado não altera uma decisão.
+
+#### H. Falta um motivo reconhecível no momento da necessidade
+
+Uma atividade recorrente pode ocorrer sem que o cliente se lembre do app. A página do modelo comportamental de Fogg organiza comportamento em motivação, facilidade/capacidade e estímulo. [F1] Usamos essa lente para investigar, não como prova de uma causa na Localiza.
+
+Verificar o que dispara o acesso atual: vencimento, aviso, pendência ou iniciativa própria. Comunicação vista e comunicação que ajuda são resultados diferentes. Não supomos que mais notificações produzam mais utilidade.
+
+#### I. Condições de uso e familiaridade mudam o esforço
+
+Disponibilidade de tempo, conectividade, aparelho, habilidade digital e acessibilidade podem tornar uma consulta conveniente ou trabalhosa. A idade é uma variável de contexto, sem equivaler a capacidade. [B1, B3, A1]
+
+Precisamos observar a tarefa e a condição em que ela ocorre. Uma pessoa pode dominar aplicativos de mensagens e não ter prática com uma operação específica; outra pode ter grande autonomia em qualquer idade. Barreiras devem ser descritas pela tarefa, não por um rótulo geracional.
+
+#### J. Papéis, intensidade de uso e fase do contrato são diferentes
+
+Quem assina pode não ser quem dirige, abastece ou organiza os serviços. Uma conta também pode acompanhar mais de um veículo ou uma rotina empresarial. A fase de entrega, manutenção ou mudança de contrato pode gerar consultas temporárias.
+
+Identificar papel, número de veículos, dias em que dirige, quilômetros, cidade, tempo de contrato e eventos recentes. Sem isso, uma média mistura clientes com oportunidades muito diferentes de uso.
+
+### 2.5 Aprofundando os 17%: frequência alta pode ter naturezas opostas
+
+| Padrão possível | O que observar | Interpretação possível |
 |---|---|---|
-| Reconhecimento | O serviço considera minha situação quando isso importa? | Cliente relata oferta ou informação incompatível com sua necessidade |
-| Confiança | Posso acreditar na informação e no que foi combinado? | Busca repetida por confirmação, inconsistência ou promessa não cumprida |
-| Continuidade | Meu assunto segue sendo acompanhado entre etapas e canais? | Repetição de dados, perda de histórico, responsabilidade indefinida |
-| Valor percebido | Consigo identificar o que a assinatura faz por mim? | Dificuldade de explicar utilidade ou benefício efetivamente recebido |
+| Consultas recorrentes úteis | Dados consultados, decisão tomada, confiança | O recurso encontra uma necessidade real |
+| Uso de vantagens | Benefício elegível e utilização confirmada | O app participa de episódios de economia/conveniência |
+| Acompanhamento de evento | Várias consultas sobre um serviço em andamento | Uso concentrado numa fase específica |
+| Várias responsabilidades | Múltiplos veículos/papéis e tarefas distintas | Maior frequência decorre do contexto de gestão |
+| Tentativas repetidas | Mesmo objetivo, erro/abandono, sem conclusão | A frequência pode refletir esforço excessivo |
+| Curiosidade ou novidade | Exploração inicial que diminui depois | Acesso temporário, sem recorrência estabelecida |
 
-Essas dimensões podem afetar a relação, mas ainda não medimos sua presença na base. Uma pessoa também pode estar satisfeita sem buscar proximidade emocional com a marca.
+Não sabemos qual padrão predomina. Precisamos comparar os grupos pelo que conseguem realizar, e não apenas pela quantidade de eventos.
 
-O contraste entre avaliação do app e avaliação relacional sugere investigar experiências além da interface: preço, entrega do carro, manutenção, disponibilidade, assistência, devolução e expectativas. Não demonstra que a causa esteja no aplicativo.
+**Uma pergunta especialmente útil:** “Se a frequência desse cliente cair porque ele passou a resolver com menos passos, consideraríamos isso melhora ou piora?” A resposta obriga o time a definir valor antes de perseguir acessos.
 
-Para aprender sobre vínculo, perguntar por episódios: “Quando você sentiu que a Localiza ajudou?” e “Quando sentiu que precisava resolver tudo sozinho?”. “Você se conecta com a marca?” tende a produzir uma resposta abstrata.
-
-## 12. Enquadramento: árvore de problemas
-
-**Questão investigada:** por que, em determinado episódio de mobilidade, o cliente não obtém ou não percebe valor na relação com a assinatura?
+### 2.6 Árvore de investigação da baixa frequência
 
 ```text
-Primeiro, verificar se havia uma necessidade e uma oportunidade real de ajuda.
+Por que houve pouca utilização no período?
 │
-├── A. Não havia necessidade/oportunidade relevante
-│   └── Pouca interação pode ser um resultado saudável, sem dor a resolver.
+├── 1. Poucas necessidades pertinentes ao app surgiram
+│   ├── Tarefas naturalmente episódicas
+│   └── Papel/fase/intensidade de uso com pouca demanda
 │
-└── B. Havia uma necessidade ou oportunidade relevante
-    ├── B1. Adequação: a oferta disponível não atende ao contexto
-    ├── B2. Descoberta/acesso: existe ajuda, mas não é encontrada ou acessada
-    ├── B3. Compreensão: informação ou regra não permite decidir com confiança
-    ├── B4. Execução: a pessoa entende o que fazer, mas não conclui a ação
-    ├── B5. Continuidade: iniciou a ação, mas não sabe ou não obtém seu desfecho
-    ├── B6. Reconhecimento: o resultado ocorreu, mas seu valor não é percebido
-    └── B7. Outro mecanismo ou evidência insuficiente
+└── 2. Necessidades pertinentes surgiram
+    ├── 2.1 Não existe capacidade útil para o contexto
+    ├── 2.2 Existe, mas o cliente não conhece/encontra/lembra
+    ├── 2.3 Conhece, mas prefere uma alternativa com maior vantagem
+    ├── 2.4 Pretende usar, mas encontra barreira de acesso/execução
+    ├── 2.5 Obtém valor sem precisar abrir o app
+    └── 2.6 Outro mecanismo ou evidência insuficiente
 ```
 
-### Como aplicar MECE sem esconder sobreposições
+Aplicação de MECE: primeiro verificar se houve necessidade; se houve, classificar a primeira razão demonstrada para não usar. Registrar outras razões como fatores secundários, sem contar o mesmo episódio várias vezes. Essa árvore é inicial e deve ser revista com casos reais. [M1, p. 20–22]
 
-O PDF orienta categorias mutuamente excludentes e coletivamente exaustivas. [M1, p. 22] Nesta classificação, registramos **um episódio uma vez**, pela primeira barreira demonstrada na sequência; causas posteriores ficam como fatores secundários.
+### 2.7 Idade, cultura e rotina dentro deste subproblema
 
-Exemplo ilustrativo: a pessoa não consegue entrar no app, procura atendimento e repete dados. A primeira barreira é acesso; repetição e perda de continuidade são consequências/fatores secundários. Não contamos três pessoas ou três episódios.
+O case traz 60% de respondentes com 45+ em uma pesquisa de 671 leads/clientes RAC, no contexto do case 1. **Não é o perfil etário da base ativa do app.** [C1, p. 17]
 
-A árvore é uma estrutura inicial. Preferência, urgência e privacidade atravessam etapas e devem ser registradas separadamente. Casos ambíguos precisam de revisão; a categoria “outro/evidência insuficiente” evita forçar relatos nas hipóteses do time. A exaustividade deve ser testada com casos reais.
+Para estudar recorrência, considerar faixas adultas de 18–24, 25–34, 35–44, 45–59 e 60+, sempre cruzando com habilidade, papel e atividade. O mesmo interesse em economia de tempo pode aparecer em qualquer faixa.
 
-## 13. Hipóteses causais e explicações alternativas
-
-| Hipótese | Evidência que a fortaleceria | Evidência que a enfraqueceria |
+| Dimensão | Como pode mudar a oportunidade de uso | O que perguntar/observar |
 |---|---|---|
-| H1. Parte da baixa frequência decorre de pouca relevância contextual | Necessidade frequente e oferta atual desconhecida/inadequada | Cliente não precisa de apoio e está satisfeito com uso pontual |
-| H2. Parte do atendimento é gerada por barreiras digitais | Tentativa anterior e bloqueio observável no mesmo episódio | Tarefa digital concluída; contato atende outra necessidade |
-| H3. Informação ou confirmação insuficiente leva ao humano | Cliente identifica a lacuna e atendente a resolve | Informação era clara; contato exige uma ação diferente |
-| H4. Falta de continuidade aumenta esforço e recontato | Mesma solicitação reaparece por ausência de atualização ou histórico | Novo contato trata de um assunto independente |
-| H5. Benefícios têm baixa utilidade no contexto do cliente | Elegibilidade/disponibilidade inadequada ou esforço superior ao ganho | Uso simples e ganho percebido; baixa demanda legítima |
-| H6. Esforço e promessas não cumpridas enfraquecem confiança | Episódios concretos ligados à avaliação da relação | Avaliação é explicada principalmente por preço ou mudança de necessidade |
-| H7. Idade se relaciona com algumas barreiras, mediada por outros fatores | Diferenças persistem ao considerar tarefa e familiaridade | Diferenças são explicadas por habilidade, aparelho ou contexto |
+| Cidade e infraestrutura | Parceiros, estacionamento e pedágio não estão distribuídos igualmente | Quais serviços realmente usa no território |
+| Rotina urbana/rodoviária | Exposição a cada atividade é diferente | Episódios de uma semana e de um mês habituais |
+| Organização familiar/empresarial | Quem dirige e quem consulta podem ser pessoas distintas | Responsabilidade de cada pessoa |
+| Preço e orçamento | Economia nominal pode ou não compensar esforço | Como compara alternativas e custos |
+| Familiaridade digital | Mesma tarefa pode exigir esforço diferente | Execução observada, sem usar idade como substituto |
+| Preferências e privacidade | Pode evitar compartilhar dados ou novas contas | O que aceita informar e o que considera excessivo |
 
-Essa tabela organiza **hipóteses de causa**, não hipóteses de solução. Relações com renovação ou indicação exigem análise adicional; entrevistas isoladas não demonstram efeito causal.
+Essas dimensões geram perguntas; não são explicações causais comprovadas. A investigação deve evitar suposições como “jovem quer gamificação” ou “pessoa mais velha não usa app”.
 
-Explicações concorrentes que precisam permanecer abertas: preço de renovação, alteração de renda, mudança de necessidade, troca de veículo, experiência operacional, condição contratual, ausência de interesse em benefícios ou preferência legítima por pouca interação.
+### 2.8 Como medir recorrência com valor
 
-## 14. Impacto do problema para cliente e empresa
-
-| Frente | Impacto possível para o cliente | Consequência possível para a Localiza |
+| Métrica | Definição a estabelecer | Limite |
 |---|---|---|
-| Tempo e esforço | Buscar informações, repetir dados, esperar | Atendimento e recontato adicionais |
-| Previsibilidade | Dificuldade de organizar horários ou compreender custos | Reclamação e perda de confiança |
-| Disponibilidade do carro | Compromissos ou trabalho afetados | Pressão sobre operação e assistência |
-| Benefícios | Valor anunciado não se transforma em ganho utilizável | Investimento com baixa percepção de valor |
-| Relação | Sensação de falta de apoio ou responsabilidade | Possível efeito em avaliação, renovação e indicação |
+| Conclusão útil por oportunidade | Episódios em que o cliente alcança o resultado entre aqueles em que a necessidade ocorre | Exige identificar necessidade e resultado |
+| Retorno para novo episódio | Cliente volta quando surge outra necessidade pertinente | Repetir tentativa no mesmo episódio não equivale a retorno útil |
+| Uso confirmado de benefício | Vantagem efetivamente utilizada, não somente clicada | Pode depender de confirmação do parceiro |
+| Esforço e compreensão | Tempo/passos e entendimento do resultado | Menos tempo não basta se a decisão fica confusa |
+| Cobertura da utilidade | Proporção do público para quem a capacidade é disponível e pertinente | Uma função pode ser excelente para um recorte pequeno |
+| Frequência de acesso | Eventos segundo definição técnica | Indicador de contexto, sem valor automático |
 
-As consequências são hipóteses até serem verificadas por episódio e dados internos. Não há estimativa validada de perda financeira ou ganho potencial neste documento.
+Uma passagem de pedágio automática ou uma informação entregue por aviso pode criar valor sem sessão adicional. Isso precisa ser medido separadamente. A meta de recorrência deve acompanhar a cadência da necessidade, evitando transformar uma atividade mensal em obrigação diária.
 
-Para dimensionar, medir: clientes afetados, episódios por período, duração, severidade, resultado e custo associado. Separar custo variável de capacidade já instalada. Menos contatos não representa economia automaticamente e pode indicar desistência se a resolução também cair.
+### 2.9 Resposta provisória ao primeiro subproblema
 
-## 15. Priorizar a investigação antes de priorizar a solução
+**O suporte mais forte está no caráter episódico das funções atuais e na desconexão contextual descrita pelo próprio case.** Outras explicações plausíveis são desconhecimento, inadequação de benefícios, preferência por alternativas, barreiras e diferenças de papel/rotina.
 
-O PDF recomenda concentrar recursos nas questões de maior impacto. Pareto é uma orientação de foco; **não temos evidência de que 20% das causas expliquem 80% dos problemas da Localiza**. [M1, p. 26–28]
+Ainda não sabemos quanto cada causa explica os 36%. Também não sabemos se os 17% representam uso valioso, acompanhamento ou esforço repetido. A investigação precisa comparar resultados por episódio e acompanhar a mesma base em mais de um período.
 
-| Prioridade de pesquisa | Por que investigar primeiro | Material necessário |
-|---|---|---|
-| 1. Motivos de contato e tentativa prévia | Distingue preferência, barreira e necessidade operacional | Taxonomia, episódios e resolução |
-| 2. Tarefas concluídas, erros e recontatos | Separa uso eficiente de esforço repetido | Eventos por jornada e solicitação |
-| 3. Valor percebido e benefícios | Avalia a oportunidade central apresentada no case | Experiências recentes, elegibilidade e uso confirmado |
-| 4. Motivos de renovação/saída | Define o limite de influência do digital | Base elegível e fatores comerciais/operacionais |
-| Transversal. Idade, habilidade, papel e região | Explica para quem e em quais condições a dificuldade aparece | Recrutamento diverso e cruzamentos |
+## 3. Subproblema 2 — Quais funcionalidades de dirigir estão ausentes?
 
-Essa ordem expressa valor de informação para a pesquisa. Não afirma que a primeira frente seja a dor mais prevalente.
+### 3.1 O que podemos afirmar sobre o app atual
 
-Depois da coleta, priorizar problemas por **alcance, frequência, intensidade, esforço atual, relação com o desafio e capacidade de atuação da Localiza**. Registrar a qualidade da evidência ao lado da avaliação. Evitar notas numéricas inventadas para aparentar precisão.
+O case descreve gestão de quilometragem, alertas de aproximação do limite, localização do carro, alertas de movimentação/carro ligado, nível de combustível e bateria. Também apresenta um clube de benefícios. [C1, p. 24, 28 e 32–33]
 
-## 16. Plano de coleta para validar o problema
+A descrição oficial do app consultada em 02/10/2026 anuncia **descontos em hotéis, pedágios e estacionamentos**. A versão retornada pelo catálogo Apple é 5.2.0. [L3]
 
-### 16.1 Entrevistas com assinantes
+Portanto, não podemos dizer que o app não possui qualquer recurso relacionado a abastecimento, estacionamento, pedágio ou rotas. Precisamos separar informação, vantagem comercial e capacidade de executar uma atividade.
 
-Uma rodada exploratória de aproximadamente **12–18 assinantes**, se houver acesso e tempo, pode ajudar a descobrir mecanismos. Não estima prevalência por idade ou retorno financeiro.
+### 3.2 Escala de comprovação
 
-Diversificar: pouco e muito uso do app, com e sem contato recente, diferentes idades, habilidades digitais, cidades e tempos de contrato. Registrar PF/empresa e papel na conta. Quando possível, incluir quem está próximo da renovação e quem saiu recentemente, tratando esses grupos separadamente.
-
-Não recrutar somente colegas entusiasmados com tecnologia. Se participarem, registrar sua relação com a assinatura; opiniões de não clientes não validam a dor de assinantes.
-
-### 16.2 Perguntas sobre episódios reais
-
-1. Por que você decidiu assinar e o que esperava deixar de administrar?
-2. Conte a última situação em que precisou resolver algo relacionado ao carro ou contrato.
-3. Qual era seu objetivo? O que tentou primeiro e depois?
-4. Onde encontrou dificuldade? O que aconteceu como consequência?
-5. Procurou atendimento? O que precisava que a pessoa fizesse?
-6. Tentou o app antes? O contato foi escolha ou resultado de uma barreira?
-7. Como soube que estava resolvido? Precisou confirmar novamente?
-8. Conte uma situação em que conseguiu resolver sozinho com facilidade.
-9. Em um mês tranquilo, quando percebe o valor da assinatura?
-10. Já tentou usar um benefício? Qual foi a sequência e o resultado?
-11. O que pesaria para renovar ou sair? Que experiência sustenta sua resposta?
-12. Que tarefa no celular costuma fazer sozinho e em qual pede ajuda?
-
-Evitar perguntas que induzem: “Você prefere humano, certo?”, “Um superapp ajudaria?” ou “Você usaria uma IA?”. Nesta etapa, precisamos entender necessidade, comportamento e alternativa atual.
-
-### 16.3 Observar tarefas e consultar operação
-
-Quando houver autorização e condições adequadas, observar uma tarefa real ou reconstruí-la com o cliente. Registrar a sequência, informação consultada, erro, canal e resultado. A observação deve preservar dados pessoais e não exigir contratação ou cobrança desnecessária.
-
-Conferir os episódios com atendimento e operação: o que o processo permite, qual informação existe, quem executa a ação e o que depende de parceiro. O atendente pode identificar barreiras, mas sua interpretação não substitui a experiência do cliente.
-
-### 16.4 Dados internos a solicitar
-
-| Conjunto | Dados agregados ou acesso autorizado | Pergunta respondida |
-|---|---|---|
-| Definições | Bases, períodos, atividade, metodologia de NPS | Estamos comparando a mesma população? |
-| Uso por tarefa | Início, conclusão, erro, abandono, tempo | Qual jornada concentra esforço? |
-| Atendimento | Motivo, canal, cliente único, tentativa prévia, resolução e recontato | Por que o contato acontece e se resolve? |
-| Operação | Disponibilidade, prazo, confirmação e cancelamento | A causa depende da interface ou da entrega? |
-| Benefícios | Elegibilidade, visualização, tentativa e resgate confirmado | Falta adequação, descoberta ou execução? |
-| Perfil/contexto | Idade em faixas, papel, região, PF/empresa, tempo de contrato | Quem é afetado e em quais condições? |
-| Negócio | Elegibilidade de renovação, motivo de saída e indicação | Que fatores pesam no resultado? |
-
-Dados individuais identificáveis não são necessários para muitos desses diagnósticos. Para relacionar eventos de uma mesma solicitação, usar apenas o acesso autorizado e os identificadores necessários.
-
-## 17. Como analisar sem confundir correlação e causa
-
-Usar uma ficha por episódio com: objetivo, disparador, sequência, primeira barreira, fatores secundários, consequência, alternativa, resultado, evidência e grau de confiança.
-
-Comparações úteis:
-
-- Frequência de app × conclusão de tarefas: pouco uso pode coexistir com alta eficiência.
-- Contato × tentativa prévia × motivo: procurar atendimento não comprova rejeição ao app.
-- Recontato × mesma solicitação: contatos diferentes não são automaticamente repetição.
-- Idade × habilidade × tarefa: idade isolada não explica a barreira.
-- Benefício × elegibilidade × região: não resgatar algo indisponível não é desinteresse.
-- Renovação × preço × necessidade × histórico operacional: o digital é apenas um dos fatores possíveis.
-
-As entrevistas explicam mecanismos e ajudam a construir categorias. Dados quantitativos estimam alcance quando têm amostra, cobertura e denominadores adequados. Se houver apenas usuários que escolheram usar um recurso, não atribuir sua maior renovação ao recurso sem considerar seleção e outros fatores.
-
-### Métricas do diagnóstico
-
-Medir conclusão por episódio, esforço percebido, tempo, erros, resolução no primeiro contato, recontato e compreensão do desfecho. Para benefícios, medir uso confirmado e ganho percebido. Para relacionamento, manter avaliação global separada da avaliação da interação.
-
-MAU e frequência ajudam a contextualizar, mas não substituem resultado. NPS global não identifica sozinho a causa de um episódio. Não estabelecer metas de melhoria antes de conhecer a linha de base.
-
-## 18. Critérios para fechar a etapa do problema
-
-Antes de avançar ao conceito, o time precisa conseguir preencher:
-
-| Pergunta | Evidência mínima desejada |
+| Situação | Significado |
 |---|---|
-| Quem é afetado? | Papel, segmento e condições de uso descritos |
-| Em qual situação? | Disparador e objetivo reconhecíveis |
-| Qual é a dificuldade? | Episódios concretos e uma barreira identificável |
-| Por que importa? | Consequência e esforço atual demonstrados |
-| Como resolve hoje? | Alternativa e suas limitações |
-| Qual é a causa provável? | Coerência entre relato, observação e processo |
-| Qual é o alcance? | Dados disponíveis ou lacuna explicitada |
-| A Localiza consegue atuar? | Responsáveis e limites operacionais conhecidos |
-| O que pode contrariar o diagnóstico? | Evidência de sucesso e explicações concorrentes |
+| Documentado pelo fornecedor/case | A capacidade é anunciada; não foi executada nesta pesquisa |
+| Não confirmado nas fontes | Não encontramos evidência suficiente; ausência permanece em aberto |
+| Disponível e concluído | Uma auditoria futura comprova o resultado num perfil/versão/região |
+| Disponível com limitação | Existe, mas cobertura, elegibilidade ou execução restringem o uso |
+| Ausente no recorte auditado | A função não está disponível na conta e condições testadas, com confirmação adequada |
 
-Um padrão em entrevistas pode justificar aprofundamento, mas não prova que a maioria da base sofre a mesma dor. Se o hackathon limitar a coleta, o pitch deve distinguir achados, hipóteses e validações planejadas.
+**Ausência de menção na descrição não é prova de ausência no produto.** Também não basta um botão visível: ele pode encaminhar para outro serviço ou depender de condições que impeçam a conclusão.
 
-**Modelo para a formulação final:**
+### 3.3 Matriz consolidada das capacidades
 
-> “[Público/papel], quando [situação], precisa [resultado], mas enfrenta [barreira demonstrada], o que gera [consequência]. Hoje resolve por [alternativa], com [limitação].”
+| Atividade | Capacidade | Estado documental | Fonte/base |
+|---|---|---|---|
+| Abastecimento | Visualizar nível de combustível | Documentado | Case, p. 33 |
+| Abastecimento | Localizar/comparar postos e preços | Não confirmado | Não comprovado no material examinado |
+| Abastecimento | Aplicar benefício específico vigente de combustível | Não confirmado | Catálogo completo de parceiros não recuperado |
+| Abastecimento | Pagar e acompanhar abastecimentos | Não confirmado | Jornada transacional não comprovada |
+| Estacionamento | Acessar descontos | Documentado na descrição oficial | Catálogo Apple da Localiza |
+| Estacionamento | Encontrar opções por destino e cobertura | Não confirmado | Desconto não comprova busca contextual |
+| Estacionamento | Consultar vagas/preços ou reservar | Não confirmado | Disponibilidade e transação não comprovadas |
+| Estacionamento | Pagar, estender período e acompanhar utilização | Não confirmado | Operação completa não comprovada |
+| Pedágio | Acessar descontos | Documentado na descrição oficial | Catálogo Apple da Localiza |
+| Pedágio | Ativar/administrar tag e vínculo com veículo | Não confirmado | Parceria e gestão operacional não auditadas |
+| Pedágio | Consultar passagens, extrato e cobranças | Não confirmado | Jornada específica não comprovada |
+| Pedágio | Estimar custos por trajeto | Não confirmado | Planejamento não comprovado |
+| Rotas | Consultar localização do carro | Documentado | Case, p. 33 |
+| Rotas | Acompanhar km e limite contratado | Documentado | Case, p. 32 |
+| Rotas | Planejar/navegar com trânsito e previsão de chegada | Não confirmado | Localização não comprova navegação |
+| Rotas | Relacionar trajeto a custos/uso contratado/benefícios | Não confirmado | Coordenação contextual não comprovada |
 
-Preencher esse modelo com evidência é o resultado esperado desta etapa. Se a maior dificuldade estiver no preço ou na operação, o diagnóstico deve refletir isso. Se a frequência baixa for saudável, ela não deve continuar sendo tratada como dor.
+Essa matriz registra **lacunas de comprovação**, que serão classificadas como lacunas funcionais somente após auditoria. Não é um levantamento autenticado de todas as funções da versão atual.
 
-## 19. Síntese para discussão do time
+### 3.4 Abastecimento — da informação do tanque ao abastecimento realizado
 
-**Mensagem principal:** precisamos investigar a distância entre a promessa de conveniência da assinatura e o valor que o cliente consegue obter e reconhecer em seus episódios de mobilidade.
+**Trabalho do cliente:** decidir quando, onde e como abastecer com conveniência, custo compreensível e opção adequada.
 
-### Respostas que podemos levar ao grupo hoje
+| Etapa da atividade | Informação/resultado que pode importar | O que sabemos na Localiza |
+|---|---|---|
+| Perceber necessidade | Combustível disponível e contexto de uso | Nível de combustível documentado; cobertura por veículo a verificar |
+| Escolher posto | Distância, horário, preço, combustível e confiança | Busca/comparação não confirmadas |
+| Avaliar vantagem | Oferta aplicável e custo líquido | Benefício específico vigente não confirmado |
+| Executar | Abastecer e pagar com pouca fricção | Pagamento via app não confirmado |
+| Confirmar/acompanhar | Comprovante e histórico úteis | Histórico de abastecimento não confirmado |
 
-| Subproblema | Conclusão sustentada nesta etapa |
+**Lacuna possível:** o app informa o estado do carro, mas pode não participar da decisão ou conclusão do abastecimento. O estado final ainda precisa ser auditado.
+
+Pontos que aprofundam o problema:
+
+- O cliente consulta o nível pelo app ou olha o painel? O dado digital resolve uma situação específica?
+- O combustível apresentado está atualizado e disponível naquele modelo? Um recurso anunciado pode ter cobertura variável.
+- Onde o cliente já abastece e por quê: caminho, preço, confiança, benefício ou conveniência?
+- Encontrar um posto mais barato gera economia depois do deslocamento e do tempo adicional?
+- Uma vantagem da Localiza acumula com benefícios já usados ou exige trocar uma opção melhor?
+- O responsável pelo pagamento é quem dirige e tem acesso ao benefício?
+
+**Cadência:** abastecimento depende de consumo, deslocamento e veículo. Dirigir diariamente não significa abastecer diariamente. Não existe no material uma frequência média de abastecimento dos assinantes.
+
+**Alternativa documentada:** Shell Box anuncia busca de postos participantes, pagamento pelo app e benefícios/pontos. Waze anuncia postos na rota e preços, com variação de disponibilidade. [A2, A4] Isso mostra que a necessidade possui alternativas; precisamos descobrir se o cliente as usa e qual dificuldade permanece.
+
+**Evidência necessária para declarar uma lacuna relevante:** episódio recente, tentativa/alternativa, resultado insatisfatório ou esforço importante e capacidade ausente/limitada na conta auditada. Sem isso, temos uma função candidata, não uma dor validada.
+
+### 3.5 Estacionamento — do destino à utilização encerrada
+
+**Trabalho do cliente:** estacionar numa opção adequada ao destino, horário e orçamento, entendendo condições e resultado.
+
+| Etapa da atividade | Informação/resultado que pode importar | O que sabemos na Localiza |
+|---|---|---|
+| Identificar opções | Localização, acesso e distância ao destino | Busca contextual não confirmada |
+| Comparar | Horário, preço, regra e adequação | Comparação não confirmada |
+| Garantir acesso, se aplicável | Disponibilidade ou reserva | Reserva/vaga em tempo real não confirmadas |
+| Utilizar | Entrada, período, pagamento ou benefício | Descontos anunciados; execução não auditada |
+| Encerrar | Saída, cobrança e comprovante | Acompanhamento transacional não confirmado |
+
+**O recurso já anunciado é o desconto.** Precisamos descobrir a natureza desse benefício: estabelecimento, condição, forma de resgate, localização, vigência e eventual parceiro. Não sabemos se engloba estacionamento privado, rotativo público ou ambos.
+
+Pontos que aprofundam o problema:
+
+- Estaciona em garagem própria, vaga do trabalho, via pública ou estacionamento pago? Essas situações geram necessidades diferentes.
+- A maior dificuldade é encontrar uma opção, pagar, entender o tempo permitido ou usar o desconto?
+- O parceiro fica perto do destino ou exige desvio que elimina a vantagem?
+- O benefício é fácil de aplicar no momento certo? A pessoa só descobre depois de pagar?
+- Existe um serviço já contratado que elimina a necessidade de abrir qualquer app na entrada/saída?
+- O preço anunciado é o preço que efetivamente paga naquela condição?
+
+**Cadência:** pode ser alta para alguns trajetos urbanos e baixa para quem utiliza garagem fixa ou estacionamento incluído. Frequência deve ser medida por rotina, sem assumir que toda a base estaciona em locais pagos.
+
+**Alternativas documentadas:** Waze anuncia busca de estacionamentos perto do destino; Sem Parar anuncia locais de uso em estacionamentos e extrato da tag. [A2, A3] Isso não comprova vagas reais, reserva ou cobertura para um cliente específico.
+
+**Lacuna possível:** a pessoa conhece uma vantagem, mas não consegue relacioná-la ao destino ou concluí-la com conveniência. A ausência de uma função de busca pode importar; a baixa cobertura do benefício também pode ser a causa. São problemas distintos.
+
+### 3.6 Pedágio — da passagem ao entendimento da cobrança
+
+**Trabalho do cliente:** passar pelo pedágio com conveniência e compreender custos, condições e cobrança.
+
+| Etapa da atividade | Informação/resultado que pode importar | O que sabemos na Localiza |
+|---|---|---|
+| Planejar | Praças/tarifas e custo do trajeto | Estimativa de pedágio não confirmada |
+| Preparar meio de passagem | Tag/vínculo/elegibilidade | Desconto anunciado; natureza e operação não auditadas |
+| Passar | Cobrança/pagamento aplicável | Execução integrada não confirmada |
+| Conferir | Passagem, valor e responsável | Extrato específico não confirmado |
+| Ajustar vínculo | Troca de veículo, retirada ou encerramento | Jornada de tag não confirmada |
+
+Não sabemos se o desconto anunciado se refere a tarifa, contratação de parceiro, mensalidade de serviço ou outra condição. **Não devemos transformar a frase comercial em promessa de desconto sobre toda passagem.**
+
+Pontos que aprofundam o problema:
+
+- Usa estrada com pedágio na rotina ou somente em viagens?
+- Já tem tag? Quem contratou, paga e administra o vínculo com o veículo?
+- Qual parte dá trabalho: preparação, pagamento, conferência ou entendimento da condição?
+- A passagem automática já resolve o problema sem abrir app?
+- Existem cobranças em sistemas de pedágio eletrônico que exigem uma consulta específica? Como a pessoa acompanha hoje?
+- Quando troca ou devolve o veículo, quais responsabilidades precisa administrar? As regras reais dependem do contrato e do fornecedor.
+
+**Cadência:** pode ser cotidiana para um trajeto rodoviário e eventual para outro cliente. Mesmo pedágio diário pode produzir poucas aberturas se a tag funcionar automaticamente.
+
+**Alternativas documentadas:** Sem Parar anuncia extrato da tag e cobrança de pedágio eletrônico; Waze anuncia evitar rotas pedagiadas e consultar tarifas com antecedência, com restrições de disponibilidade. [A2, A3]
+
+**Lacuna possível:** não conseguir compreender ou administrar uma condição pertinente ao veículo/assinatura. Simplesmente adicionar uma consulta já resolvida pelo fornecedor da tag pode ter pouco valor. Precisamos avaliar a dificuldade restante.
+
+### 3.7 Rotas — da intenção de chegar ao destino à decisão de trajeto
+
+**Trabalho do cliente:** chegar ao destino com previsibilidade, escolhendo uma opção adequada ao tempo, custo e condições.
+
+| Etapa da atividade | Informação/resultado que pode importar | O que sabemos na Localiza |
+|---|---|---|
+| Definir destino/horário | Objetivo do deslocamento | Planejamento de destino não confirmado |
+| Comparar caminhos | Tempo, distância, trânsito e pedágio | Navegação/comparação não confirmadas |
+| Considerar condições do carro | Uso contratado e informação disponível | Km e localização documentados; relação com um trajeto não confirmada |
+| Seguir percurso | Orientação e atualização do caminho | Navegação passo a passo não confirmada |
+| Avaliar resultado | Tempo/custo/uso relevante | Jornada contextual completa não confirmada |
+
+**Localização do carro não equivale a navegação. Gestão de km não equivale a previsão de impacto de uma rota no contrato.** O case documenta as primeiras capacidades, sem comprovar as segundas.
+
+Pontos que aprofundam o problema:
+
+- O cliente já conhece o caminho e quer apenas trânsito, ou precisa de orientação completa?
+- Qual aplicativo consulta antes de sair? Qual se tornou a alternativa habitual?
+- A dificuldade está no caminho ou numa condição de mobilidade que o navegador não conhece?
+- Tempo de chegada, distância ou custo pesam mais naquela situação?
+- Existe dúvida sobre como um deslocamento se relaciona ao uso contratado? Com que frequência?
+- A informação precisa aparecer no celular ou na interface que a pessoa já usa no carro?
+
+**Cadência:** conhecer o caminho não elimina interesse em trânsito, mas também não prova necessidade de consulta. Precisamos observar a rotina real, evitando assumir navegação diária de toda a base.
+
+**Alternativas documentadas:** Waze e Google Maps anunciam navegação, trânsito e recálculo de trajetos. Waze anuncia planejamento por horário, tarifas de pedágio, postos e estacionamentos. A disponibilidade varia por região/recurso. [A2, A5]
+
+**Lacuna possível:** informação relevante da assinatura permanece separada de uma decisão de deslocamento. Isso é diferente de ausência de um navegador próprio. Precisamos demonstrar qual dúvida ou esforço a separação produz antes de definir o conceito.
+
+### 3.8 O que as alternativas mostram — e o que não mostram
+
+| Alternativa | Capacidades anunciadas relevantes | Pergunta para o assinante |
+|---|---|---|
+| Shell Box | Postos participantes, pagamento e benefícios | O que ainda dá trabalho mesmo usando essa opção? |
+| Sem Parar | Tag, extrato, locais de uso e pedágio eletrônico | Qual parte da relação com seu carro/contrato continua separada? |
+| Waze | Rotas, trânsito, pedágios, postos e estacionamento | Que necessidade sua não é atendida por essa jornada? |
+| Google Maps | Navegação, trânsito, lugares e mapas off-line | Há algum esforço que o serviço atual deixa para você? |
+
+Fontes: descrições dos respectivos fornecedores nas lojas, consultadas nesta etapa. [A2–A5] Não testamos as funções nem comprovamos disponibilidade no território, adesão ou preferência dos clientes Localiza.
+
+O benchmark ajuda a avaliar **redundância e dificuldade restante**. Não prova que a Localiza deva reproduzir essas capacidades. Promoções das alternativas, números de usuários e alegações comerciais de economia não são usados como previsão de resultado.
+
+### 3.9 Limite específico do catálogo de benefícios
+
+A página oficial do Clube mostra categorias e afirma acesso via app. Os cartões de parceiros são carregados dinamicamente. Nesta pesquisa, o HTML recebido não continha o catálogo resolvido; a fonte pública de dados indicada pela própria página respondeu **HTTP 406**. [L2]
+
+Assim, não foi possível verificar todos os parceiros, benefícios vigentes, regiões ou regulamentos. A descrição oficial do app confirma que descontos de estacionamento/pedágio são anunciados, mas não confirma as condições de cada oferta.
+
+Esse limite é relevante: não podemos declarar ausência de benefício de combustível nem prometer uma parceria específica com base numa coleta incompleta.
+
+### 3.10 Como auditar ausência no produto atual
+
+Auditar uma atividade por vez, começando pelo resultado que o cliente deseja. Registrar:
+
+| Campo | Por que precisa constar |
 |---|---|
-| 36% com 1–2 acessos e 17% com 11+ | O uso é distribuído e compatível com tarefas pontuais; frequência sozinha não distingue utilidade, eficiência ou atrito |
-| Funcionalidades diárias ausentes | Combustível/localização e descontos de estacionamento/pedágio estão documentados; outras capacidades e jornadas completas ainda precisam ser auditadas |
-| Gargalos que geram atendimento | Há sinais de acesso, integração, agendamento e repetição, mas não temos prevalência atual nem atribuição do volume de contatos |
-| Preferência por humanos em tarefas simples | Não demonstrada para a base; precisamos separar interpretação/risco, escolha, falha e exigência operacional |
+| Data, versão e sistema operacional | A disponibilidade pode mudar entre versões/plataformas |
+| Tipo de usuário e papel | Titular e condutor podem ter acessos diferentes |
+| Contrato e veículo pertinentes | Recursos podem depender de elegibilidade e conectividade |
+| Cidade/território | Cobertura de parceiros e informação local pode variar |
+| Caminho de descoberta | Existir não significa ser fácil de encontrar |
+| Informação, regra e atualização | A decisão depende de clareza e confiabilidade |
+| Etapas externas | Encaminhar para parceiro não equivale a conclusão dentro do app |
+| Resultado alcançado | Desconto aplicado, serviço utilizado ou informação compreendida |
+| Motivo da limitação | Ausência, cobertura, acesso, compreensão ou execução |
 
-### Duas formulações provisórias do problema
+Testar busca por termos, navegação pelos menus, catálogo/regulamentos e eventual encaminhamento. Conferir com produto se o resultado é restrição do perfil ou ausência efetiva. Não generalizar o comportamento de uma conta para toda a base.
 
-**Utilidade recorrente:** “O assinante pode ter necessidades de mobilidade além da gestão contratual que não são atendidas ou percebidas como úteis no contexto atual. Ainda precisamos identificar essas necessidades e separá-las do uso pontual saudável.”
+**Resultado esperado da auditoria:** uma lista de capacidades comprovadas e limitações por recorte, acompanhada de evidência. A lista final de funções ausentes ainda não pode ser fechada nesta pesquisa documental.
 
-**Dependência de atendimento:** “Em parte das demandas, o cliente pode não conseguir descobrir, compreender, executar ou confirmar uma ação com autonomia. Ainda precisamos localizar as barreiras e distinguir casos evitáveis das situações em que o atendimento agrega valor ou é necessário.”
+### 3.11 Resposta provisória ao segundo subproblema
 
-Três argumentos sustentam a investigação:
+**Já documentado:** nível de combustível, localização do veículo, gestão de km e descontos anunciados de estacionamento/pedágio.
 
-1. **Adoção já existe.** O case apresenta 80,1% de acesso mensal e NPS do app 84; o problema precisa ser mais específico do que conquistar downloads ou acessos.
-2. **Há oportunidade declarada de relevância e relacionamento.** O próprio case aponta benefícios pouco conectados ao contexto e uso pontual, mas ainda precisamos localizar as necessidades e suas consequências.
-3. **Atendimento e negócio exigem decomposição.** Volume de contatos, renovação e indicação são importantes, porém não isolam causa, preferência ou influência do aplicativo.
+**Não comprovado:** busca/comparação e pagamento de abastecimento; busca/reserva/pagamento de estacionamento; gestão de tag/extrato de pedágio; navegação e planejamento de rotas; coordenação dessas atividades com contexto, contrato e benefícios.
 
-**Formulação provisória para o grupo:**
+A conclusão correta é que **há capacidades e jornadas a verificar**, não que todas essas funções estejam definitivamente ausentes. A importância de cada possível lacuna depende da dificuldade real, da elegibilidade e da alternativa já utilizada.
 
-> “O app Localiza Assinatura já é utilizado e bem avaliado. Queremos entender em quais situações o cliente ainda faz esforço relevante para aproveitar a assinatura ou não percebe um valor pertinente à sua mobilidade. Antes de escolher uma solução, vamos identificar quem é afetado, a causa, o impacto e como essa necessidade é atendida hoje.”
+## 4. Como os dois subproblemas se relacionam
 
-**Situação atual da investigação:** o desafio e os sinais documentais estão definidos; a dor prioritária, sua prevalência e suas causas específicas ainda precisam de validação. Essa é a base para a próxima etapa: conceito.
+### 4.1 Atividade frequente não garante interação frequente
 
-## 20. Fontes, rastreabilidade e limites
+| Situação ilustrativa | Por que pode gerar poucos acessos |
+|---|---|
+| Dirige diariamente num caminho conhecido | Pode não precisar consultar uma rota em todos os deslocamentos |
+| Abastece quando necessário e já tem posto de preferência | A decisão pode estar resolvida sem nova pesquisa |
+| Estaciona na vaga fixa do trabalho | Busca/reserva de vaga pode não ser pertinente |
+| Passa em pedágio com cobrança automática | O serviço funciona sem abrir o app a cada passagem |
 
-### Materiais do repositório — conferidos nesta etapa
+São exemplos analíticos, não personas ou achados de entrevistas. Eles mostram por que o potencial de uso precisa ser estimado por episódio elegível e tarefa.
 
-- **[C1]** [Cases Meoo Ruptura — apresentação](<../../../Cases Meoo Ruptura ApresentaÃ§Ã£o CD.pdf>): p. 5–6, público/produto; p. 17, pesquisa de leads/clientes RAC; p. 19–22, case 2; p. 24–36, app e recursos. As páginas 19, 21 e 25 foram também inspecionadas visualmente.
-- **[M1]** [Ideação e Validação de problemas — Ruptura](<../../../Ideacao e Validacao de problemas - Ruptura(1).pdf>): p. 11–12, etapas; p. 16–17, definição/SCQ; p. 20–22, árvores e MECE; p. 26–28, priorização/análise; p. 33–36, síntese e comunicação. Este documento usa a síntese para comunicar o diagnóstico, mantendo a resolução para a etapa posterior.
-- **[M2]** [Aula o Problema](<../../../Aula o Problema.key.pdf>): p. 4, público/origem/impacto/recursos; p. 6, experiências dos usuários; p. 7, coleta, estruturação, hierarquização e validação.
+### 4.2 Quatro tipos de lacuna com efeitos diferentes
 
-### Fontes externas — consultadas novamente nesta etapa
+| Tipo de lacuna | Diagnóstico | Relação possível com recorrência |
+|---|---|---|
+| Funcional | Não existe capacidade para uma necessidade mal atendida | Cliente precisa resolver fora, se houver alternativa |
+| Descoberta | A capacidade existe, mas não é conhecida/lembrada | Uso potencial não se materializa |
+| Adequação | Existe, mas contexto/condição/cobertura não atende | Conhecimento não se transforma em utilização |
+| Execução | O cliente tenta, mas não chega ao resultado | Pode gerar abandono ou acessos repetidos |
 
-- **[L2]** [Clube de Benefícios — página oficial](https://assinatura.localiza.com/clube-de-beneficios), consulta em 02/10/2026: categorias e acesso via app documentados; cartões dinâmicos de parceiros não foram resolvidos no conteúdo recebido. Cobertura/regulamentos individuais não auditados.
-- **[L3]** [Descrição oficial do app — catálogo Apple Brasil](https://itunes.apple.com/lookup?id=1528537131&country=br), consulta em 02/10/2026: versão 5.2.0, publicada em 25/09/2026. A descrição anuncia descontos em hotéis, pedágios e estacionamentos, além das funções de contrato/serviços. É declaração do fornecedor; a jornada não foi testada.
+Esses mecanismos não autorizam a mesma conclusão. Uma lacuna de descoberta não comprova necessidade de nova função. Uma alternativa externa satisfatória também não comprova uma lacuna relevante para o cliente.
 
-### Fontes externas — aproveitadas da pesquisa anterior
+### 4.3 Formulação aprofundada do problema
 
-As fontes abaixo foram registradas na pesquisa de 02/10/2026. Seu conteúdo não foi recolhido novamente nesta etapa; os limites e o recorte original estão preservados no histórico. São apoio ao diagnóstico, com diferenças de população, método e época.
+> **A rotina de dirigir cria oportunidades potenciais de utilidade, mas o app é associado principalmente à gestão pontual da assinatura. Precisamos descobrir em quais episódios existe uma necessidade importante, se a capacidade está disponível e por que ela não se transforma em resultado reconhecido pelo cliente.**
 
-- **[L1]** [Site oficial Localiza Assinatura](https://assinatura.localiza.com/): posicionamento, públicos e serviços divulgados. Conteúdo comercial; condições dependem do contrato.
-- **[B1]** [Cetic.br — TIC Domicílios 2025, C2A](https://cetic.br/pt/tics/domicilios/2025/individuos/C2A/): uso de internet; base populacional por faixa, diferente da base Localiza.
-- **[B2]** [Cetic.br — TIC Domicílios 2025, C5](https://cetic.br/pt/tics/domicilios/2025/individuos/C5/): comunicação; percentuais citados têm como base usuários de internet de cada recorte.
-- **[B3]** [Cetic.br — TIC Domicílios 2025, I1A](https://cetic.br/pt/tics/domicilios/2025/individuos/I1A/): atividades/habilidades declaradas; não é teste de incapacidade. [Metodologia da pesquisa](https://cetic.br/pt/pesquisa/domicilios/).
-- **[R1]** [App Store brasileira — Localiza Assinatura](https://apps.apple.com/br/app/localiza-assinatura-meoo/id1528537131) e [feed de avaliações recentes](https://itunes.apple.com/br/rss/customerreviews/id=1528537131/sortBy=mostRecent/json): recorte anterior de 50 relatos, sem representatividade ou reprodução das falhas.
-- **[R2]** [Google Play — Localiza Assinatura](https://play.google.com/store/apps/details?id=com.localiza.meoo.app&hl=pt_BR&gl=BR): três relatos exibidos no conteúdo recebido na pesquisa anterior; seleção feita pela loja.
-- **[U1]** [NN/g — Minimize the Need for Customer Service to Improve the Omnichannel UX](https://www.nngroup.com/articles/customer-service-omnichannel-ux/), 2016: mecanismos de contato em 45 jornadas de outros contextos; não estima comportamento Localiza.
-- **[U2]** [NN/g — The User Experience of Chatbots](https://www.nngroup.com/articles/chatbots/), 2018: estudo com oito participantes nos EUA; anterior aos modelos generativos atuais.
-- **[U3]** [NN/g — Consistency in the Omnichannel Experience](https://www.nngroup.com/articles/omnichannel-consistency/), 2016: consistência de informação entre canais e confiança.
-- **[A1]** [W3C/WAI — Older Users and Web Accessibility](https://www.w3.org/WAI/older-users/): acessibilidade e possíveis necessidades, sem caracterizar indivíduos por idade.
-- **[H1]** Histórico da pesquisa: [evidências e limites no commit 04abccd](https://github.com/Eduardo-Klausing/breaking-time-ruptura-2026/blob/04abccdeaedf6fa733b6c34e67df71a9018c13b1/pesquisa/case-2/04-evidencias-e-fontes/README.md) e [registro de coleta](https://github.com/Eduardo-Klausing/breaking-time-ruptura-2026/blob/04abccdeaedf6fa733b6c34e67df71a9018c13b1/pesquisa/case-2/04-evidencias-e-fontes/REGISTRO-DE-COLETA.json).
+Essa formulação conecta frequência e funcionalidades sem assumir que centralização, mais conteúdo ou abertura diária sejam a resposta.
 
-Não usamos relatos como proporção da base, demografia de leads como perfil dos assinantes, chat como sinônimo de humano ou frequência como sinônimo de valor. Não há neste documento validação de demanda, demonstração causal de retenção nem estimativa de retorno financeiro.
+## 5. Plano de validação exclusivo destes dois subproblemas
+
+### 5.1 Dados a solicitar à Localiza
+
+| Dado | Pergunta respondida |
+|---|---|
+| Definição de acesso e base da distribuição | O que 36% e 17% representam exatamente? |
+| Distribuição mensal da mesma base por 3–6 meses | As faixas são estáveis ou refletem fases/eventos? |
+| Entradas, jornadas, conclusão, erros e duração | O cliente retorna por utilidade ou esforço? |
+| Descoberta e uso confirmado de benefícios | Falta conhecimento, adequação ou execução? |
+| Elegibilidade por veículo/contrato/região | A capacidade anunciada atende quem? |
+| Papel do usuário, tempo de contrato e intensidade de uso | Oportunidades são comparáveis entre grupos? |
+| Catálogo atual de funções/parceiros e regras | Quais ausências e limitações são efetivas? |
+| Preferência/alternativa e esforço por atividade | O que já está resolvido fora do app? |
+
+Priorizar dados agregados. Relacionar eventos do mesmo episódio somente com acesso autorizado e identificadores necessários. Não coletar trajetos contínuos apenas para investigar se uma atividade é relevante; relatos e dados adequados ao objetivo podem bastar.
+
+### 5.2 Recrutamento para pesquisa qualitativa
+
+Uma primeira rodada de aproximadamente **12–18 assinantes**, se houver disponibilidade, pode revelar mecanismos. É uma proposta de investigação, não uma amostra capaz de estimar a prevalência das causas.
+
+Incluir clientes das faixas 1–2, 3–10 e 11+, com diferentes papéis, cidades, idades e habilidades. Selecionar também rotinas expostas e pouco expostas a estacionamento pago/pedágio. Registrar uso de alternativas e fase do contrato.
+
+Faixa de acesso só é critério confiável se confirmada nos dados. Autodeclaração aproximada deve ser identificada como tal. Pessoas sem assinatura podem ajudar a entender o enunciado, mas não substituem os clientes na validação desses percentuais.
+
+### 5.3 Perguntas sobre frequência e valor
+
+1. Conte seus últimos usos do app: qual era o objetivo de cada um?
+2. O que conseguiu concluir? Precisou voltar para o mesmo assunto?
+3. Quando não usa, existe algo que gostaria de resolver e não consegue?
+4. Quais recursos conhece sem que eu mostre uma lista?
+5. Na última vez que usou um benefício, como descobriu, aplicou e confirmou?
+6. O que esperava deixar de administrar quando assinou?
+7. Que atividades relacionadas ao carro já resolve bem de outra forma?
+8. Qual foi a última situação em que o app poupou trabalho? E em que acrescentou trabalho?
+9. Seu padrão de uso mudou em algum período? O que aconteceu naquele momento?
+
+Evitar “por que você não se engaja?”: a pergunta pressupõe que o comportamento está errado. Buscar sequência, resultado e consequência.
+
+### 5.4 Perguntas específicas das quatro atividades
+
+| Atividade | Perguntas de aprofundamento |
+|---|---|
+| Abastecimento | Onde foi o último abastecimento? Como escolheu? Qual benefício utilizou? Qual etapa tomou esforço? Consultou o nível pelo app? |
+| Estacionamento | Onde estacionou no último destino pago? Como encontrou e pagou? Conhecia uma vantagem Localiza aplicável? Por que usou ou deixou de usar? |
+| Pedágio | Quando foi a última passagem? Como pagou e conferiu? Quem administra a tag? Qual condição gerou dúvida ou trabalho? |
+| Rotas | No último deslocamento que exigiu consulta, o que precisava saber? Qual alternativa abriu? O que continuou faltando? |
+
+Perguntar por episódios recentes antes de sugerir capacidades. A resposta “seria legal ter” não demonstra problema, frequência ou disposição de uso.
+
+### 5.5 Observação e registro
+
+Para um episódio, registrar: objetivo, situação, alternativa, recurso encontrado, primeira barreira, fatores secundários, tempo/esforço, resultado, valor percebido e evidência.
+
+Observar tarefas como localizar um benefício aplicável, compreender suas regras e verificar a forma de utilização; ou encontrar uma informação do veículo e explicar qual decisão ela permite. Quando houver etapa externa, acompanhar sua conclusão possível sem tratar um clique como resultado final.
+
+Não confundir falha do recurso com indisponibilidade do parceiro ou ausência de elegibilidade. Registrar também casos de sucesso, para entender por que a mesma capacidade funciona em determinado contexto.
+
+### 5.6 Critérios para confirmar uma dor prioritária
+
+| Critério | Evidência desejada |
+|---|---|
+| Necessidade real | Episódio concreto, sem depender da sugestão do pesquisador |
+| Recorrência | Repetição na cadência da rotina, não apenas curiosidade inicial |
+| Impacto | Esforço, custo, incerteza ou perda de conveniência demonstrados |
+| Alternativa insuficiente | Dificuldade permanece depois da forma atual de resolver |
+| Lacuna identificada | Ausência/descoberta/adequação/execução comprovada no recorte |
+| Alcance | Público elegível descrito; prevalência medida ou reconhecida como lacuna |
+| Capacidade de atuação | Dependências de produto, dados e parceiros compreendidas |
+
+Priorizar a coleta que mais reduz incerteza: definição das métricas; motivos e resultados por faixa; inventário autenticado; elegibilidade e utilidade das quatro atividades. O princípio de Pareto orienta foco, sem afirmar uma distribuição 80/20 que não foi medida. [M1, p. 26–28]
+
+Se o cliente está satisfeito com pouco uso, registrar sucesso. Se a alternativa externa atende bem, reconhecer esse limite. Se uma vantagem existe, mas não serve ao território, classificar adequação/cobertura. Se 11+ significa repetir tentativas, rever o rótulo de engajamento útil.
+
+## 6. Síntese para compartilhar com o grupo
+
+### Subproblema 1 — resposta fundamentada
+
+> “Os 36% com 1–2 acessos são compatíveis com a natureza episódica das funções de gestão da assinatura. O case aponta pouca relevância contextual fora dessas tarefas, mas ainda precisamos distinguir uso eficiente, desconhecimento, inadequação, alternativas e barreiras. Os 17% com alta frequência também precisam ser avaliados por conclusão e valor, porque retorno pode representar utilidade ou repetição.”
+
+### Subproblema 2 — resposta fundamentada
+
+> “O app já apresenta nível de combustível, localização, gestão de km e descontos anunciados de estacionamento/pedágio. Não conseguimos comprovar jornadas completas de abastecimento, estacionamento, gestão de tag ou navegação. Para declarar ausência, precisamos auditar o app por perfil, versão, veículo e região; para justificar relevância, precisamos identificar a dificuldade que permanece na rotina do cliente.”
+
+### Formulação provisória da dor
+
+> “Quando preciso tomar uma decisão cotidiana de mobilidade, posso não reconhecer o app da assinatura como uma opção útil ou não encontrar uma capacidade aplicável que facilite chegar ao resultado.”
+
+Essa frase sintetiza uma hipótese do time; não é uma fala coletada de cliente.
+
+O próximo marco da pesquisa é identificar **qual público, em qual atividade, enfrenta qual barreira, com qual consequência e usando qual alternativa hoje**. Esse recorte sustentará a etapa do conceito.
+
+## 7. Fontes e limites
+
+### Materiais do repositório
+
+- **[C1]** [Cases Meoo Ruptura — apresentação](<../../../Cases Meoo Ruptura ApresentaÃ§Ã£o CD.pdf>): p. 5–6, público; p. 17, pesquisa de leads/clientes RAC; p. 19–22, desafio; p. 24–36, app; p. 25, indicadores; p. 28, benefícios; p. 32–33, km/telemetria. Números e descrição atribuídos ao material, sem auditoria interna. Páginas de indicadores já foram também inspecionadas visualmente na investigação.
+- **[M1]** [Ideação e Validação de problemas — Ruptura](<../../../Ideacao e Validacao de problemas - Ruptura(1).pdf>): p. 11–12, etapas; p. 16–17, SCQ; p. 20–22, árvores/MECE; p. 26–28, priorização; p. 33–36, síntese.
+- **[M2]** [Aula o Problema](<../../../Aula o Problema.key.pdf>): p. 4, público/origem/impacto; p. 6, experiências dos usuários; p. 7, coleta, análise e validação.
+
+### Fontes consultadas novamente ou adicionadas nesta atualização
+
+- **[L2]** [Clube de Benefícios Localiza Assinatura](https://assinatura.localiza.com/clube-de-beneficios): página consultada em 02/10/2026. Categorias e acesso via app documentados; catálogo dinâmico não resolvido no HTML. A [fonte pública referenciada pela página](https://caohee.com.br/meoo/wp-json/acf/v3/pages/16) respondeu HTTP 406. Não comprovamos parceiros/regulamentos individuais.
+- **[L3]** [Descrição oficial Localiza Assinatura — catálogo Apple Brasil](https://itunes.apple.com/lookup?id=1528537131&country=br) e [ficha do app](https://apps.apple.com/br/app/localiza-assinatura-meoo/id1528537131): consulta em 02/10/2026; versão 5.2.0. A descrição anuncia descontos em pedágios/estacionamentos e funções administrativas. Declaração do fornecedor, sem teste autenticado.
+- **[A2]** [Waze — ficha brasileira](https://apps.apple.com/br/app/id323229106): descrição do fornecedor obtida no catálogo Apple em 02/10/2026. Rotas, trânsito, pedágios, postos, estacionamento e CarPlay anunciados; condições variam por recurso/território. Não comprova adesão dos assinantes Localiza.
+- **[A3]** [Sem Parar — ficha brasileira](https://apps.apple.com/br/app/id1440651231): descrição do fornecedor consultada em 02/10/2026; tag, extrato e locais de uso anunciados. Não auditamos cobertura, condições ou execução.
+- **[A4]** [Shell Box — ficha brasileira](https://apps.apple.com/br/app/id1037433060): descrição da Raízen obtida no catálogo Apple em 02/10/2026; postos participantes, pagamento e benefícios anunciados. Não auditamos condições nem usamos promoções para estimar resultado.
+- **[A5]** [Google Maps — ficha brasileira](https://apps.apple.com/br/app/id585027354): descrição da Google consultada em 02/10/2026; navegação, trânsito e mapas off-line anunciados. Disponibilidade varia por cidade/país/recurso.
+
+### Fontes reaproveitadas da pesquisa anterior
+
+Estas referências foram registradas na investigação de 02/10/2026 e não foram recolhidas novamente nesta atualização:
+
+- **[L1]** [Site oficial Localiza Assinatura](https://assinatura.localiza.com/): promessa comercial de comodidade e serviços; não caracteriza independentemente a motivação dos clientes.
+- **[B1]** [Cetic.br — TIC Domicílios 2025, C2A](https://cetic.br/pt/tics/domicilios/2025/individuos/C2A/): acesso à internet por população/faixa. Dados nacionais, não da Localiza.
+- **[B3]** [Cetic.br — TIC Domicílios 2025, I1A](https://cetic.br/pt/tics/domicilios/2025/individuos/I1A/): atividades/habilidades declaradas entre usuários de internet. Não é teste de capacidade individual.
+- **[A1]** [W3C/WAI — Older Users and Web Accessibility](https://www.w3.org/WAI/older-users/): acessibilidade e diversidade de necessidades, sem presumir deficiência por idade.
+- **[F1]** [Fogg Behavior Model](https://www.behaviormodel.org/): lente conceitual de motivação, capacidade/facilidade e estímulo; não valida comportamento ou recorrência na base Localiza.
+- **[R1]** [App Store brasileira — avaliações Localiza Assinatura](https://itunes.apple.com/br/rss/customerreviews/id=1528537131/sortBy=mostRecent/json): recorte anterior de 50 relatos entre 11/05/2025 e 18/09/2026. Sinais exploratórios; não representativos, sem idade/renda ou reprodução de falhas.
+- **[H1]** [Evidências e limites da pesquisa anterior](https://github.com/Eduardo-Klausing/breaking-time-ruptura-2026/blob/04abccdeaedf6fa733b6c34e67df71a9018c13b1/pesquisa/case-2/04-evidencias-e-fontes/README.md) e [registro de coleta](https://github.com/Eduardo-Klausing/breaking-time-ruptura-2026/blob/04abccdeaedf6fa733b6c34e67df71a9018c13b1/pesquisa/case-2/04-evidencias-e-fontes/REGISTRO-DE-COLETA.json): rastreabilidade do recorte reaproveitado.
+
+**Limites finais:** este documento não determina a contribuição de cada causa para os percentuais, não identifica demografia da base ativa, não comprova todas as ausências do produto e não valida demanda por uma nova função. Entrega um diagnóstico documental aprofundado e uma investigação verificável para fechar essas lacunas.
