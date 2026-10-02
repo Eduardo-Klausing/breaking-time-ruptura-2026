@@ -6,7 +6,9 @@ Pesquisa realizada em **2 de outubro de 2026**, com os três PDFs do repositóri
 
 Cada documento está em uma pasta temática, com um `README.md` que o GitHub exibe ao abrir a pasta.
 
-Para discutir o conceito com o grupo, comece por [Localiza Presente — proposta e comparação](../02-proposta-localiza-presente/README.md). O documento reúne problema → conceito → solução, diferenças em relação ao pitch compartilhado, MVP, impacto de negócio e hipóteses de validação.
+Para entender e compartilhar a ideia, comece por [Localiza Presente — documento exclusivo da ideia](../06-ideia-localiza-presente/README.md). Ele apresenta problema → conceito → solução, conexão com a rotina, jornada e MVP.
+
+Para discutir as diferenças em relação ao pitch compartilhado, consulte [Localiza Presente — proposta e comparação](../02-proposta-localiza-presente/README.md).
 
 Depois, consulte os materiais de apoio:
 
@@ -17,6 +19,7 @@ Depois, consulte os materiais de apoio:
 | [03 — Plano de validação](../03-plano-de-validacao/README.md) | Entrevistas, dados para pedir à Localiza, testes e critérios para mudar a proposta |
 | [04 — Evidências e fontes](../04-evidencias-e-fontes/README.md) | Rastreabilidade dos números, relatos, limitações e referências |
 | [05 — Superapps e comunidade](../05-superapps-e-comunidade/README.md) | Revisão dos exemplos de empresas, casos adicionais e argumentos aplicados ao case |
+| [06 — Ideia Localiza Presente](../06-ideia-localiza-presente/README.md) | Explicação exclusiva da ideia, com problema, conceito, solução, jornada e MVP |
 
 O [registro de coleta](../04-evidencias-e-fontes/REGISTRO-DE-COLETA.json), junto das evidências, guarda índices das fontes, resultados das tentativas de acesso, metadados das avaliações sem nomes e os números brasileiros usados, com seus denominadores.
 
