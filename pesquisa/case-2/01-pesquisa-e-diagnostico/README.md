@@ -1,6 +1,6 @@
 # Pesquisa e recomendação — case 2, Ruptura 2026
 
-Data de consulta: **02/10/2026**. Referências identificadas por códigos entre colchetes estão detalhadas em [Evidências e fontes](EVIDENCIAS-E-FONTES.md).
+Data de consulta: **02/10/2026**. Referências identificadas por códigos entre colchetes estão detalhadas em [Evidências e fontes](../04-evidencias-e-fontes/README.md).
 
 ## A tese para o grupo
 
@@ -446,7 +446,7 @@ Para renovação, +1 ponto percentual significa 10 renovações adicionais em ca
 
 ## 13. Validação e decisões que podem mudar a ideia
 
-O roteiro completo está em [Plano de validação](PLANO-DE-VALIDACAO.md).
+O roteiro completo está em [Plano de validação](../03-plano-de-validacao/README.md).
 
 Antes de fechar a solução, valide três coisas: **qual necessidade merece foco; por que hoje não é satisfeita; e se a proposta é melhor do que a forma atual de resolver**.
 

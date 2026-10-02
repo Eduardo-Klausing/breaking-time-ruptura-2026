@@ -1,6 +1,6 @@
 # Plano de validação — público, problema, conceito e solução
 
-Este plano transforma as hipóteses da [pesquisa](PESQUISA-E-RECOMENDACAO.md) em decisões. **As entrevistas e os testes descritos aqui ainda não foram realizados.**
+Este plano transforma as hipóteses da [pesquisa](../01-pesquisa-e-diagnostico/README.md) em decisões. **As entrevistas e os testes descritos aqui ainda não foram realizados.**
 
 ## 1. O que decidir antes de desenhar muitas telas
 

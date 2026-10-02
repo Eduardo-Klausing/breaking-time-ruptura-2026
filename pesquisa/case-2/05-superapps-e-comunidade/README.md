@@ -153,7 +153,7 @@ Um cliente pode interagir muito com conteúdo e não renovar por preço ou mudan
 5. Testar se conteúdo de outros usuários melhora essa mesma jornada.
 6. Ampliar catálogo e públicos quando houver ganho demonstrado.
 
-Os métodos detalhados estão no [plano de validação](PLANO-DE-VALIDACAO.md). O conceito está na [proposta Localiza Presente](PROPOSTA-LOCALIZA-PRESENTE-E-COMPARACAO.md).
+Os métodos detalhados estão no [plano de validação](../03-plano-de-validacao/README.md). O conceito está na [proposta Localiza Presente](../02-proposta-localiza-presente/README.md).
 
 ## 7. Mensagem pronta para a discussão
 

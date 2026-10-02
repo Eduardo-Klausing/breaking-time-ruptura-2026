@@ -32,7 +32,7 @@ Uma assinatura que promete conveniência pode deixar o cliente com trabalho de d
 
 Abrir o app pode ser consequência desse valor. Um uso pouco frequente também pode indicar que o cliente resolveu tudo rapidamente; por isso, quantidade de acessos não deve definir sucesso sozinha.
 
-Fonte dos dados: [pesquisa e recomendação](PESQUISA-E-RECOMENDACAO.md), com referências e limites em [evidências e fontes](EVIDENCIAS-E-FONTES.md).
+Fonte dos dados: [pesquisa e recomendação](../01-pesquisa-e-diagnostico/README.md), com referências e limites em [evidências e fontes](../04-evidencias-e-fontes/README.md).
 
 ## 2. Problema → conceito → solução
 
@@ -63,6 +63,21 @@ A personalização se traduz em três capacidades:
 | **Continuidade** | Confirmação, acompanhamento e ajuda humana com contexto, quando necessário | Confiança de que o assunto está sendo acompanhado |
 
 O cliente escolhe quando e como deseja receber apoio. Recorrência pode ocorrer por evento, semana ou mês. Um aviso útil que evita trabalho também pode gerar valor sem exigir abertura do aplicativo.
+
+### Rotina e atividades extras
+
+**A ideia é conectar o app às necessidades de mobilidade que surgem nas atividades habituais e nos planos extras do cliente.** O contexto determina quando uma ajuda é pertinente.
+
+| Situação | Necessidade a investigar | Apoio possível |
+|---|---|---|
+| Trabalho, escola e compromissos da rotina | Organizar um serviço sem prejudicar os horários e compreender o uso contratado | Próximo passo claro, opções disponíveis e acompanhamento da ação |
+| Abastecimento ou estacionamento | Encontrar uma vantagem relevante e fácil de utilizar | Benefício elegível, caso exista parceiro disponível e ganho demonstrável |
+| Viagem, passeio ou evento | Entender providências, informações e serviços pertinentes ao plano | Jornada “Vou viajar”, com dados confiáveis e ação realizável |
+| Transporte de equipamento esportivo | Entender condições de uso e compatibilidade aplicáveis ao carro | Orientação oficial verificada e apoio adequado à situação |
+
+São possibilidades de evolução, sujeitas a validação e disponibilidade operacional. O MVP continua concentrado numa jornada, e não tenta implementar todas elas.
+
+**Usar o carro diariamente não implica abrir o app diariamente.** O cliente recebe ajuda quando existe uma necessidade real, com contexto compartilhado voluntariamente e controle de frequência. A conexão com a marca deve vir do trabalho poupado e do cuidado entregue.
 
 ## 4. Jornada que propomos para o MVP
 
@@ -195,7 +210,7 @@ O impacto líquido deve considerar implantação, integração, operação, manu
 | A operação consegue cumprir a promessa | Revisar dados, elegibilidade e disponibilidade com responsáveis | A ação demonstrada não pode ser concluída |
 | Existe demanda para comunidade | Investigar busca de informação e disposição real de contribuir | Interesse genérico sem uso ou participação demonstrável |
 
-Roteiro completo: [plano de validação](PLANO-DE-VALIDACAO.md). Colegas podem ajudar a testar clareza, mas não substituem assinantes na validação da demanda.
+Roteiro completo: [plano de validação](../03-plano-de-validacao/README.md). Colegas podem ajudar a testar clareza, mas não substituem assinantes na validação da demanda.
 
 ## 11. Uma pergunta melhor para orientar o time
 
