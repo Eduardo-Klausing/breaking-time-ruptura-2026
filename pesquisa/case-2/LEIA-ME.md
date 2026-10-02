@@ -8,6 +8,8 @@ Leia nesta ordem:
 
 Para discutir o conceito com o grupo, comece por [Localiza Presente — proposta e comparação](PROPOSTA-LOCALIZA-PRESENTE-E-COMPARACAO.md). O documento reúne problema → conceito → solução, diferenças em relação ao pitch compartilhado, MVP, impacto de negócio e hipóteses de validação.
 
+Veja também [argumentos sobre superapps e comunidade](ARGUMENTOS-SOBRE-SUPERAPPS-E-COMUNIDADE.md): revisão dos exemplos de Apple, Google, Sony, Nike e Walmart, casos adicionais de recuo/encerramento e argumentos aplicados ao case, com fontes e limites.
+
 1. [Pesquisa e recomendação](PESQUISA-E-RECOMENDACAO.md): diagnóstico, público, idade, cultura, relação com a marca, alternativas, MVP e métricas.
 2. [Plano de validação](PLANO-DE-VALIDACAO.md): entrevistas, dados para pedir à Localiza, testes e critérios para mudar a proposta.
 3. [Evidências e fontes](EVIDENCIAS-E-FONTES.md): rastreabilidade dos números, relatos, limitações e referências.
