@@ -1,0 +1,2 @@
+# Preserva PDFs como arquivos binários, sem conversão de quebras de linha.
+*.pdf binary

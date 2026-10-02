@@ -1,0 +1,983 @@
+{
+  "data_consulta": "2026-10-02",
+  "metodo": "Pesquisa documental e exploratória; sem entrevistas e sem acesso ao app autenticado.",
+  "referencias": [
+    {
+      "codigo": "C1",
+      "titulo": "Cases Meoo Ruptura — apresentação dos cases",
+      "links": []
+    },
+    {
+      "codigo": "M1",
+      "titulo": "Ideação e Validação de problemas — Ruptura",
+      "links": []
+    },
+    {
+      "codigo": "M2",
+      "titulo": "Aula o Problema",
+      "links": []
+    },
+    {
+      "codigo": "B1",
+      "titulo": "Cetic.br/NIC.br — TIC Domicílios 2025, C2A",
+      "links": [
+        "https://cetic.br/pt/tics/domicilios/2025/individuos/C2A/"
+      ]
+    },
+    {
+      "codigo": "B2",
+      "titulo": "Cetic.br/NIC.br — TIC Domicílios 2025, C5",
+      "links": [
+        "https://cetic.br/pt/tics/domicilios/2025/individuos/C5/"
+      ]
+    },
+    {
+      "codigo": "B3",
+      "titulo": "Cetic.br/NIC.br — TIC Domicílios 2025, I1A",
+      "links": [
+        "https://cetic.br/pt/tics/domicilios/2025/individuos/I1A/",
+        "https://cetic.br/pt/pesquisa/domicilios/",
+        "https://cetic.br/pt/tics/domicilios/2025/individuos/"
+      ]
+    },
+    {
+      "codigo": "R1",
+      "titulo": "App Store brasileira — Localiza Assinatura (Meoo)",
+      "links": [
+        "https://apps.apple.com/br/app/localiza-assinatura-meoo/id1528537131",
+        "https://itunes.apple.com/br/rss/customerreviews/id=1528537131/sortBy=mostRecent/json"
+      ]
+    },
+    {
+      "codigo": "R2",
+      "titulo": "Google Play — Localiza Assinatura (Meoo)",
+      "links": [
+        "https://play.google.com/store/apps/details?id=com.localiza.meoo.app&hl=pt_BR&gl=BR"
+      ]
+    },
+    {
+      "codigo": "L1",
+      "titulo": "Site oficial Localiza Assinatura",
+      "links": [
+        "https://assinatura.localiza.com/"
+      ]
+    },
+    {
+      "codigo": "L2",
+      "titulo": "Clube de Benefícios",
+      "links": [
+        "https://assinatura.localiza.com/clube-de-beneficios"
+      ]
+    },
+    {
+      "codigo": "L3",
+      "titulo": "Descrição oficial do aplicativo",
+      "links": [
+        "https://apps.apple.com/br/app/localiza-assinatura-meoo/id1528537131",
+        "https://itunes.apple.com/lookup?id=1528537131&country=br"
+      ]
+    },
+    {
+      "codigo": "U1",
+      "titulo": "NN/g — Minimize the Need for Customer Service to Improve the Omnichannel UX",
+      "links": [
+        "https://www.nngroup.com/articles/customer-service-omnichannel-ux/"
+      ]
+    },
+    {
+      "codigo": "U2",
+      "titulo": "NN/g — The User Experience of Chatbots",
+      "links": [
+        "https://www.nngroup.com/articles/chatbots/"
+      ]
+    },
+    {
+      "codigo": "U3",
+      "titulo": "NN/g — Consistency in the Omnichannel Experience",
+      "links": [
+        "https://www.nngroup.com/articles/omnichannel-consistency/"
+      ]
+    },
+    {
+      "codigo": "U4",
+      "titulo": "NN/g — Optimizing for Context in the Omnichannel User Experience",
+      "links": [
+        "https://www.nngroup.com/articles/context-specific-cross-channel/"
+      ]
+    },
+    {
+      "codigo": "U5",
+      "titulo": "NN/g — Seamlessness in the Omnichannel User Experience",
+      "links": [
+        "https://www.nngroup.com/articles/seamless-cross-channel/"
+      ]
+    },
+    {
+      "codigo": "U6",
+      "titulo": "NN/g — Service Blueprints: Definition",
+      "links": [
+        "https://www.nngroup.com/articles/service-blueprints-definition/"
+      ]
+    },
+    {
+      "codigo": "U7",
+      "titulo": "NN/g — When and How to Create Customer Journey Maps",
+      "links": [
+        "https://www.nngroup.com/articles/customer-journey-mapping/"
+      ]
+    },
+    {
+      "codigo": "U8",
+      "titulo": "NN/g — 10 Usability Heuristics for User Interface Design",
+      "links": [
+        "https://www.nngroup.com/articles/ten-usability-heuristics/"
+      ]
+    },
+    {
+      "codigo": "A1",
+      "titulo": "W3C/WAI — Older Users and Web Accessibility",
+      "links": [
+        "https://www.w3.org/WAI/older-users/"
+      ]
+    },
+    {
+      "codigo": "F1",
+      "titulo": "BJ Fogg — Fogg Behavior Model",
+      "links": [
+        "https://www.behaviormodel.org/"
+      ]
+    },
+    {
+      "codigo": "Q1",
+      "titulo": "Qualtrics — Customer Effort Score",
+      "links": [
+        "https://www.qualtrics.com/articles/customer-experience/customer-effort-score/"
+      ]
+    },
+    {
+      "codigo": "Q2",
+      "titulo": "Qualtrics — Proactive customer service",
+      "links": [
+        "https://www.qualtrics.com/articles/customer-experience/proactive-customer-service/"
+      ]
+    },
+    {
+      "codigo": "T1",
+      "titulo": "Salesforce — State of the AI Connected Customer",
+      "links": [
+        "https://www.salesforce.com/products/resources/state-of-the-connected-customer/?bc=OTH"
+      ]
+    },
+    {
+      "codigo": "K1",
+      "titulo": "Sem Parar",
+      "links": [
+        "https://www.semparar.com.br/",
+        "https://apps.apple.com/br/app/sem-parar-tag-seguro-multas/id1440651231"
+      ]
+    },
+    {
+      "codigo": "K2",
+      "titulo": "BMW GROUP — My BMW",
+      "links": [
+        "https://apps.apple.com/br/app/my-bmw/id1519034860"
+      ]
+    },
+    {
+      "codigo": "K3",
+      "titulo": "Volvo Car Corporation — Volvo Cars",
+      "links": [
+        "https://apps.apple.com/br/app/volvo-cars/id439635293"
+      ]
+    },
+    {
+      "codigo": "V1",
+      "titulo": "Professor Mario Sergio Salerno — O que é inovação: conceitos básicos",
+      "links": [
+        "https://www.youtube.com/watch?v=0H1QjD1fi6Q",
+        "https://www.youtube.com/watch?v=KXFOU-WwTrE"
+      ]
+    }
+  ],
+  "documentos_locais": [
+    {
+      "nome": "Aula o Problema.key.pdf",
+      "sha256": "3ce1df2a8e444271dc9640ae0aadaf2ed8e699fc09f52757b6180d833f845362"
+    },
+    {
+      "nome": "Cases Meoo Ruptura ApresentaÃ§Ã£o CD.pdf",
+      "sha256": "07a5b90a1b6c8fdb99343d48e5561aae1a5ad94357cae83e3a93b4ef25b712ea"
+    },
+    {
+      "nome": "Ideacao e Validacao de problemas - Ruptura(1).pdf",
+      "sha256": "f3f5083d5200039729ac76d02c91e07f12e119f35609812f8085ea150647a32d"
+    }
+  ],
+  "registro_paginas_tentadas": [
+    {
+      "url": "https://www.nngroup.com/articles/context-specific-cross-channel/",
+      "url_final": "https://www.nngroup.com/articles/context-specific-cross-channel/",
+      "status_http": 200,
+      "titulo_recebido": "Optimizing for Context in the Omnichannel User Experience - NN/G",
+      "sha256_texto_extraido": "4428c6799f16ff63f65bb5c4453371bcb1d25b886aef5cb4525e333940077ea5"
+    },
+    {
+      "url": "https://cetic.br/pt/tics/domicilios/2024/individuos/C5/",
+      "url_final": "https://cetic.br/pt/tics/domicilios/2024/individuos/C5/",
+      "status_http": 200,
+      "titulo_recebido": "Cetic.br - Centro Regional para o Desenvolvimento da Sociedade da InformaÃ§Ã£o",
+      "sha256_texto_extraido": "45e35e3cadfc944b95e31afcf1dc5a12f010bcffb0b48641e5ce660ace19fbbc"
+    },
+    {
+      "url": "https://cetic.br/pt/tics/domicilios/2025/individuos/H6/",
+      "url_final": "https://cetic.br/pt/tics/domicilios/2025/individuos/H6/",
+      "status_http": 404,
+      "titulo_recebido": "404 Not Found",
+      "sha256_texto_extraido": "4c3187fd57854cd6dd5e967d3fd6c7ec059c4acc57fd77a29079538f823e00c6"
+    },
+    {
+      "url": "https://cetic.br/pt/tics/domicilios/2025/individuos/I1A/",
+      "url_final": "https://cetic.br/pt/tics/domicilios/2025/individuos/I1A/",
+      "status_http": 200,
+      "titulo_recebido": "Cetic.br - Centro Regional para o Desenvolvimento da Sociedade da InformaÃ§Ã£o",
+      "sha256_texto_extraido": "62350139d8a41a26adb6c912558cd6239dfa4186bfb0e3700e9a23beeb932352"
+    },
+    {
+      "url": "https://cetic.br/pt/tics/domicilios/2025/individuos/C2A/",
+      "url_final": "https://cetic.br/pt/tics/domicilios/2025/individuos/C2A/",
+      "status_http": 200,
+      "titulo_recebido": "Cetic.br - Centro Regional para o Desenvolvimento da Sociedade da InformaÃ§Ã£o",
+      "sha256_texto_extraido": "40efcc54a767836a9da8a239be90d725622db0b37e5049abad22c391a53c2be2"
+    },
+    {
+      "url": "https://www.pwc.com/us/en/services/consulting/library/consumer-intelligence-series/future-of-customer-experience.html",
+      "url_final": "https://www.pwc.com/us/en/services/consulting/library/consumer-intelligence-series/future-of-customer-experience.html",
+      "status_http": 403,
+      "titulo_recebido": "Access Denied",
+      "sha256_texto_extraido": "dfd990167e2d6cedc97d6ea8d169a03b1147fff47694e793e528877d44df7129"
+    },
+    {
+      "url": "https://www.salesforce.com/resources/research-reports/state-of-the-connected-customer/",
+      "url_final": "https://www.salesforce.com/products/resources/state-of-the-connected-customer/?bc=OTH",
+      "status_http": 200,
+      "titulo_recebido": "State of the AI Connected Customer | Salesforce",
+      "sha256_texto_extraido": "5951cf5fe606bb780fb965c11055b1322c11de897fcff7f6c60cf95007d5c031"
+    },
+    {
+      "url": "https://www.tesla.com/support/tesla-app",
+      "url_final": "https://www.tesla.com/support/tesla-app",
+      "status_http": 403,
+      "titulo_recebido": "Access Denied",
+      "sha256_texto_extraido": "d1c4207f438fc41190471c82a55f0359295d9a706ccbb850b9e4e7d244207f65"
+    },
+    {
+      "url": "https://cetic.br/pt/tics/domicilios/2024/individuos/I1A/",
+      "url_final": "https://cetic.br/pt/tics/domicilios/2024/individuos/I1A/",
+      "status_http": 200,
+      "titulo_recebido": "Cetic.br - Centro Regional para o Desenvolvimento da Sociedade da InformaÃ§Ã£o",
+      "sha256_texto_extraido": "8a2ec79e40212ac5aabf6f669d5d0828b916e10a62ef01116b8b514a6b3904eb"
+    },
+    {
+      "url": "https://www.pwc.com/gx/en/consumer-markets/consumer-insights-survey.html",
+      "url_final": "https://www.pwc.com/gx/en/consumer-markets/consumer-insights-survey.html",
+      "status_http": 403,
+      "titulo_recebido": "Access Denied",
+      "sha256_texto_extraido": "ae82ee6b44dcfb744155467cc4e991030b245e3ce4235e5b0e7543e5880d6108"
+    },
+    {
+      "url": "https://www.shellbox.com.br/",
+      "url_final": "https://www.shellbox.com.br/",
+      "status_http": 406,
+      "titulo_recebido": "Not Acceptable!",
+      "sha256_texto_extraido": "e0a6ddb5f777077ca55bc319f71c96bd03ee787af8541cccc5e8db981406fb14"
+    },
+    {
+      "url": "https://www.behaviormodel.org/",
+      "url_final": "https://www.behaviormodel.org/",
+      "status_http": 200,
+      "titulo_recebido": "Fogg Behavior Model - BJ Fogg",
+      "sha256_texto_extraido": "2ce21e8356daf1166d459b4abb0c8ab3616507dba83932f93fcf312bb68e1296"
+    },
+    {
+      "url": "https://www.bing.com/search?setlang=pt-br&cc=br&q=Gartner%20self%20service%2014%25%20issues%20fully%20resolved%202024",
+      "url_final": "https://www.bing.com/search?setlang=pt-br&cc=br&q=Gartner%20self%20service%2014%25%20issues%20fully%20resolved%202024",
+      "status_http": 200,
+      "titulo_recebido": "Gartner self service 14% issues fully resolved 2024 - Pesquisar",
+      "sha256_texto_extraido": "d47d44980a87bce25abda78770d2b9e82416e43be64ea9d3a92779ae281d5c0f"
+    },
+    {
+      "url": "https://www.qualtrics.com/experience-management/customer/customer-effort-score/",
+      "url_final": "https://www.qualtrics.com/articles/customer-experience/customer-effort-score/",
+      "status_http": 200,
+      "titulo_recebido": "Customer Effort Score (CES) & How to Measure It - Qualtrics",
+      "sha256_texto_extraido": "beca3e1f083b0b8c902caf96666ecd62dc8c17632c39ac4aae771a0416b150e4"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/omnichannel-ux/",
+      "url_final": "https://www.nngroup.com/articles/omnichannel-ux/",
+      "status_http": 404,
+      "titulo_recebido": "Page Not Found - NN/G",
+      "sha256_texto_extraido": "b01b82be1616f4dc1fe365ec1193311a6f7874af148a241173b157904a080234"
+    },
+    {
+      "url": "https://itunes.apple.com/search?term=Localiza%20Meoo&country=br&entity=software",
+      "url_final": "https://itunes.apple.com/search?term=Localiza%20Meoo&country=br&entity=software",
+      "status_http": 200,
+      "titulo_recebido": "",
+      "sha256_texto_extraido": "c9edf1808bce01aedb37e0bbc8fcc5a21e9cc7540d7ace3d500ac631cc6c6179"
+    },
+    {
+      "url": "https://www.bing.com/search?setlang=pt-br&cc=br&q=%22Localiza%20Meoo%22%20%22perfil%22%20clientes",
+      "url_final": "https://www.bing.com/search?setlang=pt-br&cc=br&q=%22Localiza%20Meoo%22%20%22perfil%22%20clientes",
+      "status_http": 200,
+      "titulo_recebido": "\"Localiza Meoo\" \"perfil\" clientes - Pesquisar",
+      "sha256_texto_extraido": "9af1db5ec7b1e866fac1c2a47a0452485a86f445e02b69aa3a76030239f9c056"
+    },
+    {
+      "url": "https://cetic.br/pt/tics/domicilios/2025/individuos/C5/",
+      "url_final": "https://cetic.br/pt/tics/domicilios/2025/individuos/C5/",
+      "status_http": 200,
+      "titulo_recebido": "Cetic.br - Centro Regional para o Desenvolvimento da Sociedade da InformaÃ§Ã£o",
+      "sha256_texto_extraido": "250aaee44f75ed8a50f95537bf89b2dd5419dbac25e170c9d4cec824d2dda933"
+    },
+    {
+      "url": "https://apps.apple.com/br/app/localiza-assinatura-meoo/id1528537131",
+      "url_final": "https://apps.apple.com/br/app/localiza-assinatura-meoo/id1528537131",
+      "status_http": 200,
+      "titulo_recebido": "âAppÂ Localiza Assinatura (Meoo) â AppÂ Store",
+      "sha256_texto_extraido": "7278bdc3f4741b96287c5ba044ae463bdef1353e6ce65bfadc3c4f7315a61c6a"
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=%22Localiza%20Meoo%22%20%22perfil%22%20clientes",
+      "url_final": "https://html.duckduckgo.com/html/?q=%22Localiza%20Meoo%22%20%22perfil%22%20clientes",
+      "status_http": 202,
+      "titulo_recebido": "DuckDuckGo",
+      "sha256_texto_extraido": "45b8c3d94412a9bf6b7e0c3afd055aeeca6d0d001274be1f9a07fbe16aeaba8d"
+    },
+    {
+      "url": "https://www.bing.com/search?setlang=pt-br&cc=br&q=%22Localiza%20Meoo%22%20%22aplicativo%22%20avalia%C3%A7%C3%B5es",
+      "url_final": "https://www.bing.com/search?setlang=pt-br&cc=br&q=%22Localiza%20Meoo%22%20%22aplicativo%22%20avalia%C3%A7%C3%B5es",
+      "status_http": 200,
+      "titulo_recebido": "\"Localiza Meoo\" \"aplicativo\" avaliações - Pesquisar",
+      "sha256_texto_extraido": "c09f6bbd02bdf6ff6172909a568b815b3d677573471ec08aadf1a29546cd1204"
+    },
+    {
+      "url": "https://www.bing.com/search?setlang=pt-br&cc=br&q=PwC%20customer%20experience%20human%20interaction%202025%20survey",
+      "url_final": "https://www.bing.com/search?setlang=pt-br&cc=br&q=PwC%20customer%20experience%20human%20interaction%202025%20survey",
+      "status_http": 200,
+      "titulo_recebido": "PwC customer experience human interaction 2025 survey - Pesquisar",
+      "sha256_texto_extraido": "76e139d37085eda8d356ae246f4d80cdacfff9bc9f7c955e965b9c92692ded9f"
+    },
+    {
+      "url": "https://cetic.br/pt/noticia/tic-domicilios-2024-aponta-avancos-na-conectividade-mas-desigualdades-no-acesso-a-internet-persistem/",
+      "url_final": "https://cetic.br/pt/noticia/tic-domicilios-2024-aponta-avancos-na-conectividade-mas-desigualdades-no-acesso-a-internet-persistem/",
+      "status_http": 404,
+      "titulo_recebido": "404 Not Found",
+      "sha256_texto_extraido": "4c3187fd57854cd6dd5e967d3fd6c7ec059c4acc57fd77a29079538f823e00c6"
+    },
+    {
+      "url": "https://www.google.com/search?q=%22Localiza+Meoo%22+perfil&client=firefox-b-d",
+      "url_final": "https://www.google.com/search?q=%22Localiza+Meoo%22+perfil&client=firefox-b-d",
+      "status_http": 200,
+      "titulo_recebido": "Google Search",
+      "sha256_texto_extraido": "370d11355cf3bc1a5eefdc6f3ab27e03cd8465f8e338d550961b9b9458269cfb"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/omnichannel-consistency/",
+      "url_final": "https://www.nngroup.com/articles/omnichannel-consistency/",
+      "status_http": 200,
+      "titulo_recebido": "Consistency in the Omnichannel Experience - NN/G",
+      "sha256_texto_extraido": "e1c138becf8e7f24aeade940fa952658caa6443e793d1c830fa7a8b808c4eb86"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/service-blueprints-definition/",
+      "url_final": "https://www.nngroup.com/articles/service-blueprints-definition/",
+      "status_http": 200,
+      "titulo_recebido": "Service Blueprints: Definition - NN/G",
+      "sha256_texto_extraido": "42f62a69f152069c7360d4bf9a0f26a1bb079cf4926de9ba9bc1d60dd0e8ced7"
+    },
+    {
+      "url": "https://www.volvocars.com/br/support/topic/733a1d1aed5cb5e0c0a8015144f2eab2/",
+      "url_final": "https://www.volvocars.com/br/support/topic/733a1d1aed5cb5e0c0a8015144f2eab2/",
+      "status_http": 403,
+      "titulo_recebido": "Access Denied",
+      "sha256_texto_extraido": "386e21c2bc6c866df64623734552a969dc3caaaa7571023558b6199209d92898"
+    },
+    {
+      "url": "https://www.qualtrics.com/articles/customer-experience/proactive-customer-service/",
+      "url_final": "https://www.qualtrics.com/articles/customer-experience/proactive-customer-service/",
+      "status_http": 200,
+      "titulo_recebido": "What is Proactive Customer Service? Benefits & Strategies",
+      "sha256_texto_extraido": "f980a975e604b8e2c73983afee998853a437475b02af600167a058b2197f11ee"
+    },
+    {
+      "url": "https://assinatura.localiza.com/",
+      "url_final": "https://assinatura.localiza.com/",
+      "status_http": 200,
+      "titulo_recebido": "Carro por Assinatura: Assine um Carro 0km! | Localiza Assinatura",
+      "sha256_texto_extraido": "88a39d79f336bd0dba52b65336fb00501930036bc3a440e61bac7725c443e261"
+    },
+    {
+      "url": "https://www.reclameaqui.com.br/empresa/localiza-meoo/",
+      "url_final": "https://www.reclameaqui.com.br/empresa/localiza-meoo/",
+      "status_http": 403,
+      "titulo_recebido": "Just a moment...",
+      "sha256_texto_extraido": "301dc171e5fa8c5fdeb69592a92a5c378f5f758f68d2338200235d60eb04b9ad"
+    },
+    {
+      "url": "https://search.brave.com/search?q=Gartner+self+service+14+percent+2024",
+      "url_final": "https://search.brave.com/search?q=Gartner+self+service+14+percent+2024",
+      "status_http": 429,
+      "titulo_recebido": "Brave Search",
+      "sha256_texto_extraido": "44e13e1c74534c1018fea70a18efe420cf2bdec21db25bfd7b8ff8af74b111b8"
+    },
+    {
+      "url": "https://assinatura.localiza.com/clube-de-beneficios",
+      "url_final": "https://assinatura.localiza.com/clube-de-beneficios",
+      "status_http": 200,
+      "titulo_recebido": "Clube de BenefÃ­cios | Localiza Assinatura",
+      "sha256_texto_extraido": "579afa62b3099c4064c334abb6323d941c921ff9f1fb0c1dd77e0617dad4e7fe"
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=%22Localiza%20Meoo%22%20%22aplicativo%22%20avalia%C3%A7%C3%B5es",
+      "url_final": "https://html.duckduckgo.com/html/?q=%22Localiza%20Meoo%22%20%22aplicativo%22%20avalia%C3%A7%C3%B5es",
+      "status_http": 202,
+      "titulo_recebido": "DuckDuckGo",
+      "sha256_texto_extraido": "55b0dfcd7c243122245712c39ced18d8f29586dbb1f1bbbad1e15c5b36530d11"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/ux-older-adults/",
+      "url_final": "https://www.nngroup.com/articles/ux-older-adults/",
+      "status_http": 404,
+      "titulo_recebido": "Page Not Found - NN/G",
+      "sha256_texto_extraido": "b01b82be1616f4dc1fe365ec1193311a6f7874af148a241173b157904a080234"
+    },
+    {
+      "url": "https://www.volvocars.com/br/volvo-cars-app/",
+      "url_final": "https://www.volvocars.com/br/volvo-cars-app/",
+      "status_http": 403,
+      "titulo_recebido": "Access Denied",
+      "sha256_texto_extraido": "e7c920c9afed145221ce3ecaaad93f3fc1c4c9f6df894a30b5a303e08c544593"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/seamless-cross-channel/",
+      "url_final": "https://www.nngroup.com/articles/seamless-cross-channel/",
+      "status_http": 200,
+      "titulo_recebido": "Seamlessness in the Omnichannel User Experience - NN/G",
+      "sha256_texto_extraido": "b79de4874431d8108f184cea441029b42e4f2cfc9c42134b2454713f55636df5"
+    },
+    {
+      "url": "https://search.yahoo.com/search?p=Localiza+Meoo+perfil+clientes",
+      "url_final": "https://search.yahoo.com/search?p=Localiza+Meoo+perfil+clientes",
+      "status_http": 500,
+      "titulo_recebido": "",
+      "sha256_texto_extraido": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "url": "https://hbr.org/2010/07/stop-trying-to-delight-your-customers",
+      "url_final": "https://hbr.org/2010/07/stop-trying-to-delight-your-customers",
+      "status_http": 200,
+      "titulo_recebido": "Stop Trying to Delight Your Customers",
+      "sha256_texto_extraido": "546bdd25638fdbfa7178066bee94510f0cb7acf61237667cfdaaffe33de71ed3"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/customer-journey-mapping/",
+      "url_final": "https://www.nngroup.com/articles/customer-journey-mapping/",
+      "status_http": 200,
+      "titulo_recebido": "Customer Journey Maps: When and How to Create Them - NN/G",
+      "sha256_texto_extraido": "bb7a3748192bb205d08f1d81e5d57cbf01db274065c4e7f0214592f059bb27cb"
+    },
+    {
+      "url": "https://www.w3.org/WAI/older-users/",
+      "url_final": "https://www.w3.org/WAI/older-users/",
+      "status_http": 200,
+      "titulo_recebido": "Older Users and Web Accessibility: Meeting the Needs of Ageing Web Users | Web Accessibility Initiative (WAI) | W3C",
+      "sha256_texto_extraido": "41803cb69bcb9e31e29bac4fb7aa8a7a9f6db61e65b32ba25318e9e83b796208"
+    },
+    {
+      "url": "https://www.pwc.com/us/en/press-releases/2025/pwc-2025-customer-experience-survey.html",
+      "url_final": "https://www.pwc.com/us/en/press-releases/2025/pwc-2025-customer-experience-survey.html",
+      "status_http": 403,
+      "titulo_recebido": "Access Denied",
+      "sha256_texto_extraido": "48d9a0fe108dd4435def8cc52f11f7e6027ede4f107d5f09a0a690195bdbd74a"
+    },
+    {
+      "url": "https://itunes.apple.com/br/rss/customerreviews/id=1528537131/sortBy=mostRecent/json",
+      "url_final": "https://itunes.apple.com/br/rss/customerreviews/id=1528537131/sortBy=mostRecent/json",
+      "status_http": 200,
+      "titulo_recebido": "",
+      "sha256_texto_extraido": "c8f67daeb923dc3e31ed086a612e582134a088e6da3a7f29e399616438a63fc1"
+    },
+    {
+      "url": "https://assinatura.localiza.com/central-de-ajuda",
+      "url_final": "https://assinatura.localiza.com/central-de-ajuda",
+      "status_http": 404,
+      "titulo_recebido": "Localiza Assinatura | Carro por Assinatura",
+      "sha256_texto_extraido": "400260e91db12df315aeebc75583b7ea0f67dd71d4b5248d94f936870465b7e6"
+    },
+    {
+      "url": "https://cetic.br/pt/pesquisa/domicilios/",
+      "url_final": "https://cetic.br/pt/pesquisa/domicilios/",
+      "status_http": 200,
+      "titulo_recebido": "Cetic.br - TIC DomicÃ­lios",
+      "sha256_texto_extraido": "756ff09bdca294192c306e5953810897015b1fccdb881dadc8f8ed4878526649"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/senior-citizens-on-the-web/",
+      "url_final": "https://www.nngroup.com/articles/senior-citizens-on-the-web/",
+      "status_http": 404,
+      "titulo_recebido": "Page Not Found - NN/G",
+      "sha256_texto_extraido": "b01b82be1616f4dc1fe365ec1193311a6f7874af148a241173b157904a080234"
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=%22customer%20service%22%20%22human%22%20%22self-service%22%20Gartner%202024",
+      "url_final": "https://html.duckduckgo.com/html/?q=%22customer%20service%22%20%22human%22%20%22self-service%22%20Gartner%202024",
+      "status_http": 202,
+      "titulo_recebido": "DuckDuckGo",
+      "sha256_texto_extraido": "45b8c3d94412a9bf6b7e0c3afd055aeeca6d0d001274be1f9a07fbe16aeaba8d"
+    },
+    {
+      "url": "https://www.semparar.com.br/",
+      "url_final": "https://www.semparar.com.br/",
+      "status_http": 200,
+      "titulo_recebido": "Sem Parar: Tag de Pedágio, Free Flow e Seguro Auto",
+      "sha256_texto_extraido": "5cc43f5683d3cb03507a59db47a521f4a6145d6a0d50c308d34ef4e563d405bf"
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=%22PwC%22%20%22human%22%20%22customer%20experience%22%202025",
+      "url_final": "https://html.duckduckgo.com/html/?q=%22PwC%22%20%22human%22%20%22customer%20experience%22%202025",
+      "status_http": 202,
+      "titulo_recebido": "DuckDuckGo",
+      "sha256_texto_extraido": "45b8c3d94412a9bf6b7e0c3afd055aeeca6d0d001274be1f9a07fbe16aeaba8d"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/super-apps/",
+      "url_final": "https://www.nngroup.com/articles/super-apps/",
+      "status_http": 404,
+      "titulo_recebido": "Page Not Found - NN/G",
+      "sha256_texto_extraido": "b01b82be1616f4dc1fe365ec1193311a6f7874af148a241173b157904a080234"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/chatbots/",
+      "url_final": "https://www.nngroup.com/articles/chatbots/",
+      "status_http": 200,
+      "titulo_recebido": "The User Experience of Chatbots - NN/G",
+      "sha256_texto_extraido": "0f31347c69acc3df9e32746382807428f3298997bbd926458ef004b7c22bc200"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "url_final": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "status_http": 200,
+      "titulo_recebido": "10 Usability Heuristics for User Interface Design - NN/G",
+      "sha256_texto_extraido": "9b85d6aa960625b746da690dc6fcffdb5924bdda9ad2a23c5a203a299dc7c7c0"
+    },
+    {
+      "url": "https://assinatura.localiza.com/ajuda",
+      "url_final": "https://assinatura.localiza.com/ajuda/s/",
+      "status_http": 200,
+      "titulo_recebido": "Localiza Assinatura",
+      "sha256_texto_extraido": "48d201dac9842d3094029c1adb3a98f1ce33cd9751087b7c8d62582fbc88bc04"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.localiza.meoo.app&hl=pt_BR&gl=BR",
+      "url_final": "https://play.google.com/store/apps/details?id=com.localiza.meoo.app&hl=pt_BR&gl=BR",
+      "status_http": 200,
+      "titulo_recebido": "Localiza Assinatura (Meoo) – Apps no Google Play",
+      "sha256_texto_extraido": "70ca10f9e9a234038ff8ca75d0447159b1efc4d2adff8e0b8401a40dfdfb91ca"
+    },
+    {
+      "url": "https://cetic.br/pt/tics/domicilios/2024/individuos/",
+      "url_final": "https://cetic.br/pt/tics/domicilios/2024/individuos/",
+      "status_http": 200,
+      "titulo_recebido": "Cetic.br - Centro Regional para o Desenvolvimento da Sociedade da InformaÃ§Ã£o",
+      "sha256_texto_extraido": "396b4b3c98645d9317383fcb1d2cd860f5e6138dca60e7aa8983ffbad8e0c18e"
+    },
+    {
+      "url": "https://www.bing.com/search?format=rss&q=Gartner%20self-service%20resolution%2014%20percent",
+      "url_final": "https://www.bing.com/search?format=rss&q=Gartner%20self-service%20resolution%2014%20percent",
+      "status_http": 200,
+      "titulo_recebido": "Bing: Gartner self-service resolution 14 percent",
+      "sha256_texto_extraido": "421be866eee9f68d7fdb3d34bc1902b5ae91631e7e36e68be06dd881083d9800"
+    },
+    {
+      "url": "https://www.nngroup.com/articles/customer-service-omnichannel-ux/",
+      "url_final": "https://www.nngroup.com/articles/customer-service-omnichannel-ux/",
+      "status_http": 200,
+      "titulo_recebido": "Minimize the Need for Customer Service to Improve the Omnichannel UX - NN/G",
+      "sha256_texto_extraido": "ff2d06a2629b136d1e5eae2e5ee1182ef826364eb93dc1cc401da86fe10de263"
+    },
+    {
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-09-11-gartner-survey-finds-only-14-percent-of-customer-service-issues-are-fully-resolved-in-self-service",
+      "url_final": "https://www.gartner.com/en/newsroom/press-releases/2024-09-11-gartner-survey-finds-only-14-percent-of-customer-service-issues-are-fully-resolved-in-self-service",
+      "status_http": 403,
+      "titulo_recebido": "Just a moment... | Gartner",
+      "sha256_texto_extraido": "e3f258d6601a1970578e4ce678b945429a211e1fd630ea25d8ceb5daf3f458b2"
+    }
+  ],
+  "observacao_paginas": "O registro inclui páginas que falharam. Essas páginas não foram usadas como evidência. Conteúdos integrais de terceiros não são redistribuídos aqui.",
+  "app_store_amostra": {
+    "url": "https://itunes.apple.com/br/rss/customerreviews/id=1528537131/sortBy=mostRecent/json",
+    "quantidade": 50,
+    "inicio": "2025-05-11T13:52:02-07:00",
+    "fim": "2026-09-18T06:12:55-07:00",
+    "notas": {
+      "1": 12,
+      "2": 3,
+      "3": 1,
+      "4": 3,
+      "5": 31
+    },
+    "limite": "50 avaliações recentes retornadas pelo feed; amostra não representativa. Notas e relatos podem se referir ao serviço e a versões antigas.",
+    "registros": [
+      {
+        "id": "14564226114",
+        "date": "2026-09-18T06:12:55-07:00",
+        "rating": 5,
+        "version": "5.1.0"
+      },
+      {
+        "id": "14505912201",
+        "date": "2026-09-03T07:34:02-07:00",
+        "rating": 4,
+        "version": "4.20.0"
+      },
+      {
+        "id": "14293953432",
+        "date": "2026-07-12T05:34:14-07:00",
+        "rating": 5,
+        "version": "4.14.2"
+      },
+      {
+        "id": "14257187618",
+        "date": "2026-07-03T02:13:35-07:00",
+        "rating": 5,
+        "version": "4.13.0"
+      },
+      {
+        "id": "14217533154",
+        "date": "2026-06-23T10:37:06-07:00",
+        "rating": 1,
+        "version": "4.13.0"
+      },
+      {
+        "id": "14104229812",
+        "date": "2026-05-25T05:49:44-07:00",
+        "rating": 1,
+        "version": "4.10.2"
+      },
+      {
+        "id": "14077967498",
+        "date": "2026-05-18T03:46:21-07:00",
+        "rating": 5,
+        "version": "4.9.0"
+      },
+      {
+        "id": "14063530025",
+        "date": "2026-05-14T06:31:48-07:00",
+        "rating": 5,
+        "version": "4.9.0"
+      },
+      {
+        "id": "13959911692",
+        "date": "2026-04-15T03:03:41-07:00",
+        "rating": 2,
+        "version": "4.7.0"
+      },
+      {
+        "id": "13930494185",
+        "date": "2026-04-06T17:32:00-07:00",
+        "rating": 5,
+        "version": "4.5.0"
+      },
+      {
+        "id": "13914232273",
+        "date": "2026-04-02T06:19:09-07:00",
+        "rating": 1,
+        "version": "4.4.1"
+      },
+      {
+        "id": "13788805500",
+        "date": "2026-02-25T12:30:48-07:00",
+        "rating": 5,
+        "version": "4.0.1"
+      },
+      {
+        "id": "13738657936",
+        "date": "2026-02-11T11:33:56-07:00",
+        "rating": 5,
+        "version": "4.0.1"
+      },
+      {
+        "id": "13737368072",
+        "date": "2026-02-11T04:13:06-07:00",
+        "rating": 5,
+        "version": "4.0.1"
+      },
+      {
+        "id": "13715352084",
+        "date": "2026-02-05T04:05:29-07:00",
+        "rating": 5,
+        "version": "4.0.1"
+      },
+      {
+        "id": "13625905899",
+        "date": "2026-01-12T10:37:18-07:00",
+        "rating": 5,
+        "version": "3.46.0"
+      },
+      {
+        "id": "13599269138",
+        "date": "2026-01-05T14:17:31-07:00",
+        "rating": 1,
+        "version": "3.46.0"
+      },
+      {
+        "id": "13556773134",
+        "date": "2025-12-26T04:43:44-07:00",
+        "rating": 1,
+        "version": "3.46.0"
+      },
+      {
+        "id": "13462315798",
+        "date": "2025-12-01T04:23:35-07:00",
+        "rating": 5,
+        "version": "3.43.0"
+      },
+      {
+        "id": "13425323565",
+        "date": "2025-11-21T13:14:41-07:00",
+        "rating": 5,
+        "version": "3.43.0"
+      },
+      {
+        "id": "13397065719",
+        "date": "2025-11-14T07:24:24-07:00",
+        "rating": 5,
+        "version": "3.42.0"
+      },
+      {
+        "id": "13388456132",
+        "date": "2025-11-12T04:17:35-07:00",
+        "rating": 5,
+        "version": "3.42.0"
+      },
+      {
+        "id": "13384691132",
+        "date": "2025-11-11T05:42:07-07:00",
+        "rating": 5,
+        "version": "3.42.0"
+      },
+      {
+        "id": "13377184529",
+        "date": "2025-11-09T08:58:29-07:00",
+        "rating": 2,
+        "version": "3.42.0"
+      },
+      {
+        "id": "13370283864",
+        "date": "2025-11-07T18:54:40-07:00",
+        "rating": 5,
+        "version": "3.42.0"
+      },
+      {
+        "id": "13352799829",
+        "date": "2025-11-03T13:31:45-07:00",
+        "rating": 5,
+        "version": "3.41.0"
+      },
+      {
+        "id": "13339421967",
+        "date": "2025-10-31T13:46:43-07:00",
+        "rating": 5,
+        "version": "3.41.0"
+      },
+      {
+        "id": "13245280332",
+        "date": "2025-10-09T11:49:02-07:00",
+        "rating": 5,
+        "version": "3.38.0"
+      },
+      {
+        "id": "13244989855",
+        "date": "2025-10-09T10:21:39-07:00",
+        "rating": 5,
+        "version": "3.38.0"
+      },
+      {
+        "id": "13243971809",
+        "date": "2025-10-09T05:50:29-07:00",
+        "rating": 2,
+        "version": "3.38.0"
+      },
+      {
+        "id": "13240726193",
+        "date": "2025-10-08T10:04:30-07:00",
+        "rating": 1,
+        "version": "3.37.0"
+      },
+      {
+        "id": "13240098071",
+        "date": "2025-10-08T07:15:46-07:00",
+        "rating": 1,
+        "version": "3.37.0"
+      },
+      {
+        "id": "13205365602",
+        "date": "2025-09-30T09:19:34-07:00",
+        "rating": 1,
+        "version": "3.34.0"
+      },
+      {
+        "id": "13062939783",
+        "date": "2025-08-26T07:20:24-07:00",
+        "rating": 5,
+        "version": "3.29.0"
+      },
+      {
+        "id": "13042857517",
+        "date": "2025-08-21T04:25:28-07:00",
+        "rating": 5,
+        "version": "3.29.0"
+      },
+      {
+        "id": "12922794609",
+        "date": "2025-07-22T07:27:06-07:00",
+        "rating": 5,
+        "version": "3.25.0"
+      },
+      {
+        "id": "12902283272",
+        "date": "2025-07-17T04:57:12-07:00",
+        "rating": 3,
+        "version": "3.25.0"
+      },
+      {
+        "id": "12892535412",
+        "date": "2025-07-14T17:23:03-07:00",
+        "rating": 1,
+        "version": "3.25.0"
+      },
+      {
+        "id": "12883778794",
+        "date": "2025-07-12T10:28:27-07:00",
+        "rating": 4,
+        "version": "3.25.0"
+      },
+      {
+        "id": "12876217411",
+        "date": "2025-07-10T11:29:17-07:00",
+        "rating": 1,
+        "version": "3.24.0"
+      },
+      {
+        "id": "12863206807",
+        "date": "2025-07-07T06:29:26-07:00",
+        "rating": 1,
+        "version": "3.24.0"
+      },
+      {
+        "id": "12821108662",
+        "date": "2025-06-26T15:27:37-07:00",
+        "rating": 5,
+        "version": "3.23.0"
+      },
+      {
+        "id": "12805830241",
+        "date": "2025-06-22T16:22:10-07:00",
+        "rating": 5,
+        "version": "3.22.0"
+      },
+      {
+        "id": "12773633618",
+        "date": "2025-06-14T07:45:51-07:00",
+        "rating": 5,
+        "version": "3.21.1"
+      },
+      {
+        "id": "12754949250",
+        "date": "2025-06-09T10:07:59-07:00",
+        "rating": 5,
+        "version": "3.21.1"
+      },
+      {
+        "id": "12738570188",
+        "date": "2025-06-05T05:32:23-07:00",
+        "rating": 5,
+        "version": "3.20.0"
+      },
+      {
+        "id": "12715546081",
+        "date": "2025-05-30T06:45:03-07:00",
+        "rating": 4,
+        "version": "3.18.1"
+      },
+      {
+        "id": "12685015030",
+        "date": "2025-05-22T08:08:45-07:00",
+        "rating": 1,
+        "version": "3.18.1"
+      },
+      {
+        "id": "12663047099",
+        "date": "2025-05-16T09:53:14-07:00",
+        "rating": 5,
+        "version": "3.18.1"
+      },
+      {
+        "id": "12645770944",
+        "date": "2025-05-11T13:52:02-07:00",
+        "rating": 5,
+        "version": "3.18.1"
+      }
+    ]
+  },
+  "cetic_2025": {
+    "fontes": {
+      "internet_ampliado": "https://cetic.br/pt/tics/domicilios/2025/individuos/C2A/",
+      "mensagens_instantaneas": "https://cetic.br/pt/tics/domicilios/2025/individuos/C5/",
+      "instalou_programa_ou_app": "https://cetic.br/pt/tics/domicilios/2025/individuos/I1A/"
+    },
+    "denominadores": {
+      "internet_ampliado": "População investigada na faixa etária",
+      "mensagens_instantaneas": "Usuários de internet na faixa etária",
+      "instalou_programa_ou_app": "Usuários de internet na faixa etária"
+    },
+    "unidade": "Percentual; valores descritivos. Não foram testadas diferenças ou calculados intervalos de confiança.",
+    "faixas": [
+      {
+        "idade": "16-24",
+        "internet_ampliado": 98,
+        "mensagens_instantaneas": 95,
+        "instalou_programa_ou_app": 48
+      },
+      {
+        "idade": "25-34",
+        "internet_ampliado": 98,
+        "mensagens_instantaneas": 97,
+        "instalou_programa_ou_app": 49
+      },
+      {
+        "idade": "35-44",
+        "internet_ampliado": 96,
+        "mensagens_instantaneas": 95,
+        "instalou_programa_ou_app": 42
+      },
+      {
+        "idade": "45-59",
+        "internet_ampliado": 90,
+        "mensagens_instantaneas": 95,
+        "instalou_programa_ou_app": 29
+      },
+      {
+        "idade": "60+",
+        "internet_ampliado": 59,
+        "mensagens_instantaneas": 83,
+        "instalou_programa_ou_app": 12
+      }
+    ]
+  },
+  "video_indicado": {
+    "url": "https://www.youtube.com/watch?v=0H1QjD1fi6Q",
+    "consulta": "Transcrição automática em português recuperada e lida; erros de reconhecimento possíveis."
+  }
+}
